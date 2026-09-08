@@ -1011,7 +1011,8 @@
 
     <!-- JAVASCRIPT APPLICATION CORE -->
     <script>
-const API_BASE_URL = "https://abokyan/bi-architect-studio-api.hf.space";
+      // رابط خادم الباك إند على Hugging Face
+const API_BASE_URL = "https://abokyan-bi-architect-studio-api.hf.space";
         /**
          * Global Application Store & Multi-Dimensional State Bus
          */
@@ -1132,12 +1133,18 @@ const API_BASE_URL = "https://abokyan/bi-architect-studio-api.hf.space";
 async function uploadToBackend(file) {
     const form = new FormData();
     form.append("file", file, file.name);
-    const response = await fetch(`${API_BASE_URL}/api/upload`, { method: "POST", body: form });
-    const body = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(body.detail || `HTTP ${response.status}`);
-    return body;
+    
+    const response = await fetch(`${API_BASE_URL}/api/upload`, {
+        method: "POST",
+        body: form
+    });
+    
+    if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`خطأ خادم (${response.status}): ${errorText || response.statusText}`);
+    }
+    return await response.json();
 }
-
         function escapeHtml(value) {
             return String(value ?? "").replace(/[&<>"']/g, char => ({
                 "&": "&amp;",
@@ -2033,7 +2040,7 @@ async function downloadBackendExport(kind, setProgress) {
                     return;
                 } catch (serverError) {
                     AppLogger.log(`تعذر استخدام FastAPI، تم الرجوع للمعالجة المحلية: ${serverError.message}`, "warning");
-                    Toast.show("تعذر الوصول لمحرك Python؛ ستستمر المعالجة المحلية.", "warning");
+                    Toast.show(`فشل الاتصال بالخادم (${serverError.message})؛ جاري المعالجة المحلية.`, "warning");
                 }
             }
 
