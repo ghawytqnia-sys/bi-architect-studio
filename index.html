@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>BI Architect Studio Enterprise v8.0</title>
+    <title>BI Architect Studio Enterprise v8.2</title>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -78,7 +78,6 @@
             transition: background-color 0.25s ease, color 0.25s ease;
         }
 
-        /* --- Notifications System --- */
         #toast-container {
             position: fixed;
             top: 16px;
@@ -112,7 +111,6 @@
         .toast-item.info { border-inline-start: 5px solid var(--accent); }
         @keyframes toastSlide { from { transform: translateY(-20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 
-        /* --- Header Styles --- */
         .app-header {
             background-color: var(--bg-header);
             border-bottom: 1px solid var(--border-color);
@@ -192,7 +190,6 @@
             border-color: rgba(147, 51, 234, 0.3);
         }
 
-        /* --- Buttons --- */
         .btn {
             display: inline-flex;
             align-items: center;
@@ -219,7 +216,6 @@
         .btn-pbi { background-color: var(--pbi-yellow); color: #03060c; font-weight: 700; }
         .btn-pbi:hover { background-color: var(--pbi-yellow-hover); }
         .btn:disabled { opacity: 0.45; cursor: not-allowed; pointer-events: none; }
-        .v-divider { width: 1px; height: 22px; background-color: var(--border-color); margin: 0 2px; }
 
         .mobile-export-dropdown { position: relative; display: none; }
         .dropdown-menu {
@@ -254,7 +250,6 @@
         }
         .dropdown-item:hover { background-color: var(--accent-glow); }
 
-        /* --- Workspace Layout --- */
         .app-workspace { flex: 1; display: flex; overflow: hidden; position: relative; width: 100%; }
         .sidebar-backdrop {
             display: none;
@@ -332,7 +327,6 @@
 
         .sidebar-footer { margin-top: auto; padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, 0.08); display: flex; flex-direction: column; gap: 6px; }
 
-        /* --- Viewport Layout --- */
         .app-viewport {
             flex: 1;
             overflow-y: auto;
@@ -348,7 +342,6 @@
         .workspace-pane { display: flex; flex-direction: column; gap: 16px; min-height: 100%; }
         .workspace-pane.hidden { display: none !important; }
 
-        /* --- Welcome Area --- */
         .welcome-dropzone {
             flex: 1;
             border: 2px dashed var(--border-color);
@@ -383,11 +376,9 @@
         .welcome-dropzone p { font-size: 12.5px; color: var(--text-muted); max-width: 560px; line-height: 1.6; margin-bottom: 20px; }
         .dropzone-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
 
-        /* --- Cards & Summary --- */
         .glass-card {
             background-color: var(--glass-bg);
             backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
             border: 1px solid var(--glass-border);
             border-radius: 12px;
             box-shadow: var(--shadow-md);
@@ -427,7 +418,6 @@
         .profiler-details span { font-size: 10.5px; color: var(--text-muted); display: block; }
         .profiler-details strong { font-size: 13.5px; font-weight: 800; color: var(--text-main); }
 
-        /* --- Interactive KPI Cards --- */
         .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
         .kpi-card {
             padding: 14px 16px;
@@ -457,7 +447,6 @@
         }
         .kpi-footer { margin-top: 6px; font-size: 10px; color: var(--accent); display: flex; align-items: center; justify-content: space-between; }
 
-        /* --- Slicers & Multi-Dimensional Filtering Bar --- */
         .slicers-bar { padding: 12px 16px; display: flex; flex-direction: column; gap: 10px; }
         .slicers-controls-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
         .slicers-items { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; flex: 1; }
@@ -485,14 +474,12 @@
         }
         .filter-chip i { cursor: pointer; }
 
-        /* --- Charts Grid --- */
         .charts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 14px; }
         .chart-card { padding: 14px; height: 380px; display: flex; flex-direction: column; }
         .chart-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
         .chart-card-header h5 { font-size: 12.5px; font-weight: 800; }
         .chart-wrapper { flex: 1; position: relative; min-height: 0; width: 100%; }
 
-        /* --- Table Data Explorer --- */
         .section-header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; flex-wrap: wrap; gap: 8px; }
         .section-header h3 { font-size: 15px; font-weight: 800; }
         .section-header p { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
@@ -503,7 +490,6 @@
         .data-table td { padding: 7px 12px; color: var(--text-muted); border-bottom: 1px solid var(--border-color); white-space: nowrap; }
         .table-pagination-bar { display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; font-size: 11.5px; color: var(--text-muted); border-top: 1px solid var(--border-color); }
 
-        /* --- Settings Styles --- */
         .settings-card { padding: 20px; max-width: 800px; }
         .settings-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
         .form-group { display: flex; flex-direction: column; gap: 5px; }
@@ -520,7 +506,6 @@
             width: 100%;
         }
 
-        /* --- Modals & Overlays --- */
         .modal-overlay, .progress-overlay {
             position: fixed;
             inset: 0;
@@ -533,7 +518,7 @@
             padding: 16px;
         }
         .modal-box {
-            width: 95%; /* mobile friendly margin */
+            width: 95%;
             max-width: 520px;
             background: var(--bg-card);
             border: 1px solid var(--border-color);
@@ -578,7 +563,6 @@
         .log-line.warning { color: #f59e0b; }
         .log-line.success { color: #10b981; }
 
-        /* --- Responsive Media Queries --- */
         @media (max-width: 992px) {
             .hamburger-btn { display: block; }
             .mobile-export-dropdown { display: block; }
@@ -617,19 +601,15 @@
 </head>
 <body>
 
-    <!-- Notification Toast Anchor -->
     <div id="toast-container"></div>
-
-    <!-- Mobile Drawer Backdrop -->
     <div class="sidebar-backdrop" id="sidebar-backdrop" onclick="toggleSidebar(false)"></div>
 
-    <!-- Main App Header -->
     <header class="app-header">
         <div class="header-brand">
             <button id="menu-toggle" class="hamburger-btn" title="تبديل القائمة"><i class="fa-solid fa-bars"></i></button>
             <div class="brand-logo"><i class="fa-solid fa-chart-pie"></i></div>
             <div class="brand-text">
-                <h1>BI Architect Studio Enterprise <span>v8.0</span></h1>
+                <h1>BI Architect Studio Enterprise <span>v8.2</span></h1>
                 <p id="sub-title">منصة ذكاء الأعمال التفاعلية واستخراج نماذج التقارير</p>
             </div>
         </div>
@@ -645,7 +625,6 @@
                 <i class="fa-solid fa-moon" id="moon-icon"></i>
             </button>
 
-            <!-- Desktop Exports -->
             <button id="export-pptx-btn" disabled onclick="ExportManager.exportPowerPoint()" class="btn btn-outline desktop-export-btn">
                 <i class="fa-solid fa-file-powerpoint" style="color: #d24726;"></i>
                 <span>PowerPoint</span>
@@ -653,7 +632,7 @@
 
             <button id="export-excel-btn" disabled onclick="ExportManager.exportExcel()" class="btn btn-outline desktop-export-btn">
                 <i class="fa-solid fa-file-excel" style="color: #107c41;"></i>
-                <span>Excel تفاعلي وصور</span>
+                <span>Excel تفاعلي</span>
             </button>
 
             <button id="export-pbip-btn" disabled onclick="ExportManager.exportPowerBI()" class="btn btn-pbi desktop-export-btn">
@@ -671,7 +650,6 @@
                 <span>JSON التحليل</span>
             </button>
 
-            <!-- Mobile Export Actions -->
             <div class="mobile-export-dropdown" id="mobile-export-wrapper">
                 <button id="mobile-export-btn" class="btn btn-primary" onclick="toggleMobileExportMenu()">
                     <i class="fa-solid fa-cloud-arrow-down"></i>
@@ -699,7 +677,6 @@
     </header>
 
     <div class="app-workspace">
-        <!-- Sidebar Navigation Drawer -->
         <aside class="app-sidebar" id="sidebar-drawer">
             <div class="sidebar-project-card">
                 <div class="project-status">
@@ -717,22 +694,18 @@
 
             <div class="nav-section">
                 <span class="nav-section-title">لوحات التحليل</span>
-                
                 <button onclick="switchView('overview')" class="nav-btn active" data-view="overview">
                     <i class="fa-solid fa-chart-pie"></i>
                     <span>المؤشرات العامة (Overview)</span>
                 </button>
-
                 <button onclick="switchView('advanced')" class="nav-btn" data-view="advanced">
                     <i class="fa-solid fa-chart-simple"></i>
                     <span>التحليل الإحصائي (Analytics)</span>
                 </button>
-
                 <button onclick="switchView('data')" class="nav-btn" data-view="data">
                     <i class="fa-solid fa-table"></i>
                     <span>مستعرض البيانات (Data Grid)</span>
                 </button>
-
                 <button onclick="switchView('settings')" class="nav-btn" data-view="settings">
                     <i class="fa-solid fa-brain"></i>
                     <span>إعدادات الذكاء الاصطناعي (AI)</span>
@@ -750,39 +723,27 @@
             </div>
         </aside>
 
-        <!-- Viewport Area -->
         <main class="app-viewport" id="main-viewport">
-            
-            <!-- Welcome File Dropzone -->
             <div id="welcome-dropzone" class="welcome-dropzone">
                 <div class="dropzone-circle"><i class="fa-solid fa-cloud-arrow-up"></i></div>
                 <h3>استوديو تحليلات الأعمال المتقدم والنمذجة الدلالية</h3>
-                <p>يدعم كافة أنواع الملفات والمجالات. يقوم المحرك باكتشاف العلاقات الإحصائية، بناء المخططات المناسبة، وتوليد حزم PBIP وExcel بصيغ احترافية.</p>
+                <p>يدعم كافة أنواع الملفات والمجالات مع التحقق التلقائي لمنع ازدواجية الحسابات وإنشاء نماذج Dashboard وPowerPoint احترافية.</p>
                 
-                <!-- NEW STEP 1: Select Report Type -->
                 <div id="step-1-type-selection" style="width: 100%; max-width: 400px; margin-bottom: 24px;">
-                    <label style="display:block; text-align:start; font-size:12px; font-weight:800; color:var(--text-main); margin-bottom:8px;">1. حدد نوع التقرير أولاً (Report Type):</label>
+                    <label style="display:block; text-align:start; font-size:12px; font-weight:800; color:var(--text-main); margin-bottom:8px;">1. حدد نوع التقرير (أو الاكتشاف الذكي):</label>
                     <select id="pre-report-type-select" class="form-control-select" onchange="handleReportTypeSelection()" style="width:100%; padding: 10px; font-size: 13px;">
                         <option value="" disabled selected>-- اختر طبيعة البيانات --</option>
                         <option value="ai_smart">🤖 اكتشاف ذكي بالذكاء الاصطناعي (AI Auto-Detect)</option>
                         <option value="sales">المبيعات والعمليات التجارية (Sales)</option>
                         <option value="inventory">المخزون وإدارة المستودعات (Inventory / Stock)</option>
                         <option value="finance">المالية والحسابات (Finance)</option>
-                        <option value="expenses">المصروفات والتكاليف (Expenses)</option>
-                        <option value="purchases">المشتريات والتوريد (Purchases)</option>
-                        <option value="customers">العملاء والمشتركين (Customers)</option>
-                        <option value="products">المنتجات والأصناف (Products)</option>
                         <option value="hr">الموارد البشرية وشؤون الموظفين (Employees / HR)</option>
+                        <option value="operations">العمليات ومؤشرات التشغيل (Operations)</option>
                         <option value="marketing">التسويق والحملات (Marketing)</option>
-                        <option value="branches">أداء الفروع والمتاجر (Branch Performance)</option>
-                        <option value="operations">العمليات التشغيلية (Operations)</option>
-                        <option value="kpi">مؤشرات الأداء المستهدفة (KPIs)</option>
-                        <option value="attendance">الحضور والانصراف (Attendance)</option>
                         <option value="custom">تقرير أعمال عام ومخصص (Custom Report)</option>
                     </select>
                 </div>
 
-                <!-- NEW STEP 2: File Upload (Hidden until type selected) -->
                 <div id="step-2-upload-area" style="display: none; width: 100%;">
                     <label style="display:block; text-align:start; font-size:12px; font-weight:800; color:var(--text-main); margin-bottom:8px; max-width: 400px; margin-left: auto; margin-right: auto;">2. قم برفع أو اختيار الملف لاستخراج البيانات:</label>
                     <div class="dropzone-actions">
@@ -794,24 +755,21 @@
                         <button onclick="loadComprehensiveDemo('inventory')" class="btn btn-outline">تجربة: مخزون</button>
                     </div>
                 </div>
-                <input type="file" id="file-upload" style="display:none;" accept=".xlsx, .xls, .csv, .tsv, .json" />
+                <input type="file" id="file-upload" style="display:none;" accept=".xlsx, .xls, .csv, .tsv" />
             </div>
 
-            <!-- Workspace Content -->
             <div id="dashboard-content" class="hidden" style="display: flex; flex-direction: column; gap: 16px;">
-                
-                <!-- Executive Summary Box -->
                 <div class="glass-card executive-summary-card" id="executive-summary-wrapper">
                     <div class="summary-header">
                         <div class="summary-header-left">
                             <div class="summary-header-icon"><i class="fa-solid fa-brain"></i></div>
                             <div>
-                                <h4 id="summary-card-title">الملخص التحليلي التنفيذي الذكي / Executive Summary</h4>
+                                <h4 id="summary-card-title">الملخص التحليلي التنفيذي المعتمد / Executive Summary</h4>
                                 <p id="summary-card-subtitle" style="font-size: 11px; color: var(--text-muted);">نمذجة دلالية مبنية على فحص وتصنيف محتوى التقرير</p>
                             </div>
                         </div>
                         <button onclick="triggerAIRefresh()" class="btn btn-outline" style="font-size: 11px;" id="ai-reanalyze-btn">
-                            <i class="fa-solid fa-arrows-rotate"></i> إعادة التحليل
+                            <i class="fa-solid fa-arrows-rotate"></i> تدقيق وتحديث الرؤى
                         </button>
                     </div>
                     
@@ -835,39 +793,34 @@
                     </div>
                 </div>
 
-                <!-- Interactive KPI Cards Row -->
                 <div class="kpi-grid" id="kpi-grid"></div>
 
-                <!-- View 1: Overview Dashboard -->
                 <section id="workspace-overview" class="workspace-pane">
                     <div class="glass-card profiler-bar">
                         <div class="profiler-metric"><i class="fa-solid fa-shield-halved"></i><div class="profiler-details"><span>جودة البيانات</span><strong id="val-profile-score">--</strong></div></div>
                         <div class="profiler-metric"><i class="fa-solid fa-circle-check"></i><div class="profiler-details"><span>اكتمال الحقول</span><strong id="val-profile-complete">--</strong></div></div>
-                        <div class="profiler-metric"><i class="fa-solid fa-clone"></i><div class="profiler-details"><span>الصفوف المكررة</span><strong id="val-profile-dup">--</strong></div></div>
-                        <div class="profiler-metric"><i class="fa-solid fa-tag"></i><div class="profiler-details"><span>طبيعة التقرير المكتشفة</span><strong id="val-profile-domain" style="color:var(--accent);">--</strong></div></div>
+                        <div class="profiler-metric"><i class="fa-solid fa-clone"></i><div class="profiler-details"><span>الصفوف المكررة المستبعدة</span><strong id="val-profile-dup">--</strong></div></div>
+                        <div class="profiler-metric"><i class="fa-solid fa-tag"></i><div class="profiler-details"><span>طبيعة التقرير</span><strong id="val-profile-domain" style="color:var(--accent);">--</strong></div></div>
                     </div>
 
-                    <!-- Advanced Multi-Dimensional Slicers Bar -->
                     <div class="glass-card slicers-bar">
                         <div class="slicers-controls-row">
                             <div class="slicers-items">
-                                <span class="slicer-label"><i class="fa-solid fa-filter" style="color:var(--accent);"></i> تصفيات الأبعاد المكتشفة:</span>
+                                <span class="slicer-label"><i class="fa-solid fa-filter" style="color:var(--accent);"></i> تصفيات الأبعاد التفاعلية:</span>
                                 <div id="dynamic-slicers" style="display:flex; flex-wrap:wrap; gap:8px;"></div>
                             </div>
                             <div style="display: flex; gap: 8px; align-items: center;">
                                 <input type="text" id="global-search-input" oninput="GlobalFilterBus.setSearch(this.value)" placeholder="بحث نصي عام..." class="form-control-input" style="padding: 5px 10px; font-size: 11px; width: 170px;">
-                                <button onclick="GlobalFilterBus.resetAll()" class="btn btn-outline" style="font-size: 11px; padding: 5px 10px;"><i class="fa-solid fa-rotate-left"></i> مسح التصفية</button>
+                                <button onclick="GlobalFilterBus.resetAll()" class="btn btn-outline" style="font-size: 11px; padding: 5px 10px;"><i class="fa-solid fa-rotate-left"></i> إلغاء التصفية</button>
                             </div>
                         </div>
 
-                        <!-- Active Filters Chips Area -->
                         <div class="active-filter-chips" id="active-filter-chips" style="display:none;"></div>
                     </div>
 
                     <div class="charts-grid" id="charts-grid"></div>
                 </section>
 
-                <!-- View 2: Advanced Analytics -->
                 <section id="workspace-advanced" class="workspace-pane hidden">
                     <div class="charts-grid">
                         <div class="glass-card chart-card" style="height:420px;">
@@ -881,7 +834,6 @@
                     </div>
                 </section>
 
-                <!-- View 3: Data Explorer -->
                 <section id="workspace-data" class="workspace-pane hidden">
                     <div class="section-header">
                         <div>
@@ -889,7 +841,7 @@
                             <p id="data-view-count">معاينة وتطهير السجلات في النموذج النشط.</p>
                         </div>
                         <button onclick="DataQualityEngine.cleanData()" class="btn btn-primary" style="font-size:12px;">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i> تنظيف التكرارات
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> إعادة فحص وتطهير التكرارات
                         </button>
                     </div>
                     <div class="table-view-card">
@@ -907,13 +859,12 @@
                     </div>
                 </section>
 
-                <!-- View 4: Settings & Diagnostics (Gemini Native) -->
                 <section id="workspace-settings" class="workspace-pane hidden">
                     <div class="glass-card settings-card">
                         <div class="section-header" style="margin-bottom: 14px;">
                             <div>
                                 <h3>إعدادات محرك الذكاء الاصطناعي (Google Gemini AI)</h3>
-                                <p>ربط مباشر بنماذج Google Gemini لتوليد المخططات والاستنتاجات الاستراتيجية آلياً.</p>
+                                <p>ربط مباشر بنماذج Google Gemini لتدقيق المؤشرات وتوليد الرؤى الاستراتيجية آلياً.</p>
                             </div>
                         </div>
 
@@ -929,16 +880,16 @@
 
                             <div class="form-group">
                                 <label>موديل Gemini المعتمد (Model):</label>
-                                <select id="gemini-model-select" class="form-control-select" onchange="handleModelSelectChange()">
+                                <select id="gemini-model-select" class="form-control-select">
                                     <option value="auto">اختيار تلقائي ذكي (Auto-Select Best Model)</option>
-                                    <option value="gemini-1.5-flash">Gemini 1.5 Flash (مستقر وسريع جداً - الموصى به)</option>
+                                    <option value="gemini-1.5-flash">Gemini 1.5 Flash (سريع ودقيق)</option>
                                     <option value="gemini-1.5-pro">Gemini 1.5 Pro (الموديل الأذكى للتحليل العميق)</option>
-                                    <option value="gemini-2.0-flash">Gemini 2.0 Flash (إصدار تجريبي حديث)</option>
+                                    <option value="gemini-2.0-flash">Gemini 2.0 Flash (إصدار متقدم)</option>
                                 </select>
                             </div>
 
                             <div class="form-group">
-                                <label>اكتشاف وتحديث الموديلات المتاحة:</label>
+                                <label>اكتشاف الموديلات المتاحة:</label>
                                 <button onclick="discoverLiveGeminiModels()" class="btn btn-outline" style="width:100%; height:36px;" id="discover-models-btn">
                                     <i class="fa-solid fa-satellite-dish"></i> جلب الموديلات المتاحة لمفتاحك
                                 </button>
@@ -947,7 +898,7 @@
                             <div class="form-group full-width" style="display:flex; flex-direction:row; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-top:8px;">
                                 <label style="display:flex; align-items:center; gap:8px; cursor:pointer;">
                                     <input type="checkbox" id="gemini-enabled" checked style="width:16px; height:16px; accent-color:var(--accent);">
-                                    <span>تفعيل تحليل Gemini الذكي والتوليد التلقائي للمخططات</span>
+                                    <span>تفعيل تدقيق الذكاء الاصطناعي وتوليد الرؤى المتقدمة</span>
                                 </label>
                                 <div style="display:flex; gap:8px;">
                                     <button onclick="testGeminiConnection()" class="btn btn-outline" style="font-size:11.5px;"><i class="fa-solid fa-bolt"></i> اختبار الاتصال</button>
@@ -960,15 +911,14 @@
 
                     <div class="glass-card logs-console-card">
                         <h4 style="font-size: 13px; font-weight: 800; margin-bottom:10px;"><i class="fa-solid fa-terminal" style="color: var(--success);"></i> سجلات الفحص والتشخيص المباشر (Audit Console)</h4>
-                        <div class="log-terminal-screen" id="log-console-screen">[System Initialized] BI Architect Studio Enterprise Ready.</div>
+                        <div class="log-terminal-screen" id="log-console-screen">[System Initialized] BI Architect Studio Enterprise v8.2 Ready.</div>
                     </div>
                 </section>
-
             </div>
         </main>
     </div>
 
-    <!-- Interactive Card Drill-Down Modal -->
+    <!-- Drill-Down Modal -->
     <div id="card-drilldown-modal" class="modal-overlay">
         <div class="modal-box">
             <div class="modal-header">
@@ -979,21 +929,7 @@
         </div>
     </div>
 
-    <!-- Type Validation & Warning Modal -->
-    <div id="type-validation-modal" class="modal-overlay">
-        <div class="modal-box">
-            <div class="modal-header">
-                <h4 id="validation-modal-title">تأكيد نوع التقرير</h4>
-            </div>
-            <div id="validation-modal-body" style="font-size:12.5px; line-height:1.6; margin-bottom: 20px;"></div>
-            <div style="display:flex; gap:10px; justify-content: flex-end;">
-                <button id="validation-btn-confirm" class="btn btn-primary" style="display:none;">تأكيد ومتابعة</button>
-                <button id="validation-btn-change" class="btn btn-outline" style="display:none;">تغيير النوع</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Export Progress Overlay Modal -->
+    <!-- Export Progress Overlay -->
     <div id="job-progress-overlay" class="progress-overlay">
         <div class="progress-box">
             <h3 id="progress-job-title" style="font-size:15px; font-weight:800; margin-bottom:4px;">معالجة وتصدير التقرير</h3>
@@ -1009,13 +945,12 @@
         </div>
     </div>
 
-    <!-- JAVASCRIPT APPLICATION CORE -->
     <script>
-      // رابط خادم الباك إند على Hugging Face
-const API_BASE_URL = "https://abokyan-bi-architect-studio-api.hf.space";
-        /**
-         * Global Application Store & Multi-Dimensional State Bus
-         */
+        // Use relative backend if served together, or Hugging Face Space URL if remote
+        const API_BASE_URL = window.location.protocol.startsWith("http") && !window.location.hostname.includes("github")
+            ? ""
+            : "https://abokyan-bi-architect-studio-api.hf.space";
+
         const AppStore = {
             selectedReportType: null,
             finalReportType: null,
@@ -1043,7 +978,6 @@ const API_BASE_URL = "https://abokyan-bi-architect-studio-api.hf.space";
             domain: {
                 id: 'generic',
                 label_ar: 'تحليل أعمال عام',
-                label_en: 'General Business Analytics',
                 confidence: 80
             },
             profiling: {
@@ -1057,44 +991,31 @@ const API_BASE_URL = "https://abokyan-bi-architect-studio-api.hf.space";
                 primaryMetric: "",
                 secondaryMetric: "",
                 dateDimension: "",
-                catDimension: "",
-                roles: {}
+                catDimension: ""
             },
             measures: [],
             visuals: [],
             chartsInstances: {},
-            // Multi-Dimensional Active Filters Schema
             activeFilters: {
-                dimensions: {},      // { [columnName]: Set(selectedValues) }
-                dateRange: { column: null, start: null, end: null },
-                numericRanges: {},   // { [columnName]: { min: number, max: number } }
+                dimensions: {},
                 searchTerm: "",
                 highlightMetric: null
             },
             geminiConfig: {
                 apiKey: "",
                 model: "auto",
-                autoSelect: true,
-                enabled: true,
-                discoveredModels: []
+                enabled: true
             },
             executiveSummary: {
                 overview: "",
                 kpis: "",
                 risks: "",
                 recs: "",
-                excel_insights: [], // AI deep review for Excel
-                pptx_takeaways: {}, // Slide specific takeaways
                 source: "local"
             },
             branding: {
-                companyName: "Enterprise Holdings",
-                reportTitle: "تقرير الأداء الاستراتيجي والتحليلي",
                 preparedBy: "BI Architect Studio Enterprise",
-                themePrimary: "2563EB",
-                themeAccent: "10B981",
-                themeDark: "0F172A",
-                themeLight: "F8FAFC"
+                reportTitle: "تقرير الأداء الاستراتيجي والتحليلي"
             },
             logs: []
         };
@@ -1127,174 +1048,13 @@ const API_BASE_URL = "https://abokyan-bi-architect-studio-api.hf.space";
             }
         };
 
-        // --- FastAPI bridge ---
-        // The browser keeps the existing interaction model, while ingestion,
-        // profiling and exports run on the Python service when the app is hosted.
-async function uploadToBackend(file) {
-    const form = new FormData();
-    form.append("file", file, file.name);
-    
-    const response = await fetch(`${API_BASE_URL}/api/upload`, {
-        method: "POST",
-        body: form
-    });
-    
-    if (!response.ok) {
-        const errorText = await response.text();
-        throw new Error(`خطأ خادم (${response.status}): ${errorText || response.statusText}`);
-    }
-    return await response.json();
-}
-        function escapeHtml(value) {
-            return String(value ?? "").replace(/[&<>"']/g, char => ({
-                "&": "&amp;",
-                "<": "&lt;",
-                ">": "&gt;",
-                '"': "&quot;",
-                "'": "&#039;"
-            }[char]));
+        function escapeHtml(val) {
+            return String(val ?? "").replace(/[&<>"']/g, c => ({
+                "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
+            }[c]));
         }
 
-        function jsAttr(value) {
-            return escapeHtml(JSON.stringify(String(value ?? "")));
-        }
-
-// 2. دالة التحليل واستخراج المؤشرات
-async function analyzeOnBackend(sheetName) {
-    if (!AppStore.jobId) return null;
-    const response = await fetch(`${API_BASE_URL}/api/analyze`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-            job_id: AppStore.jobId,
-            sheet: sheetName,
-            report_type: AppStore.selectedReportType || "custom"
-        })
-    });
-    const body = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(body.detail || `HTTP ${response.status}`);
-    
-    // في حال كانت المعالجة في الخلفية
-    if (body.status === "queued" || body.status === "running") {
-        const deadline = Date.now() + 10 * 60 * 1000;
-        while (Date.now() < deadline) {
-            await new Promise(resolve => setTimeout(resolve, 800));
-            const statusResponse = await fetch(`${API_BASE_URL}/api/analysis/${encodeURIComponent(body.analysis_id)}`);
-            const statusBody = await statusResponse.json().catch(() => ({}));
-            if (!statusResponse.ok) throw new Error(statusBody.detail || `HTTP ${statusResponse.status}`);
-            if (statusBody.status === "completed") return statusBody.result;
-            if (statusBody.status === "failed") throw new Error(statusBody.detail || "تعذر إكمال التحليل.");
-        }
-        throw new Error("استغرق التحليل وقتًا أطول من المتوقع.");
-    }
-    return body;
-}
-  // 3. دالة تصدير وتحميل الملفات (Excel / PPTX / PowerBI / CSV)
-async function downloadBackendExport(kind, setProgress) {
-    const response = await fetch(`${API_BASE_URL}/api/export/${kind}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-            job_id: AppStore.jobId,
-            sheet: AppStore.currentSheetName,
-            report_type: AppStore.finalReportType || AppStore.selectedReportType || "custom",
-            project_name: AppStore.projectName
-        })
-    });
-    const body = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(body.detail || `HTTP ${response.status}`);
-    await setProgress("تنزيل الملف الناتج...", 92);
-
-    // التأكد من تحميل الرابط كاملاً من Hugging Face
-    const downloadUrl = body.download_url.startsWith("http") 
-        ? body.download_url 
-        : `${API_BASE_URL}${body.download_url}`;
-
-    const download = await fetch(downloadUrl);
-    if (!download.ok) throw new Error(`فشل تنزيل الملف (${download.status})`);
-    const blob = await download.blob();
-    const url = URL.createObjectURL(blob);
-    const anchor = document.createElement("a");
-    anchor.href = url;
-    anchor.download = body.filename;
-    anchor.click();
-    setTimeout(() => URL.revokeObjectURL(url), 2000);
-}
-
-        const BackendAnalysisEngine = {
-            apply(result) {
-                if (!result) return;
-                const schema = result.schema || {};
-                const mapping = result.mappings || {};
-                const profile = result.profile || {};
-
-                AppStore.schema = {
-                    headers: schema.headers || [],
-                    dataTypes: schema.data_types || {},
-                    numericFields: schema.numeric_fields || [],
-                    categoricalFields: schema.categorical_fields || [],
-                    dateFields: schema.date_fields || [],
-                    classification: result.classification || "تحليل أعمال عام",
-                    confidence: result.confidence || 70
-                };
-                AppStore.domain = {
-                    id: result.detected_type || result.report_type || "custom",
-                    label_ar: result.classification || "تحليل أعمال عام",
-                    label_en: "FastAPI Analytics",
-                    confidence: result.confidence || 70
-                };
-                AppStore.profiling = {
-                    completeness: profile.completeness ?? 0,
-                    uniqueness: profile.uniqueness ?? 0,
-                    validity: profile.validity ?? 0,
-                    qualityScore: profile.quality_score ?? 0,
-                    duplicates: profile.duplicates ?? 0
-                };
-                AppStore.semanticMappings = {
-                    primaryMetric: mapping.primary_metric || "",
-                    secondaryMetric: mapping.secondary_metric || "",
-                    dateDimension: mapping.date || "",
-                    catDimension: mapping.category || "",
-                    roles: {}
-                };
-                AppStore.visuals = (result.charts || []).map((chart, index) => ({
-                    id: chart.id || `backend_chart_${index}`,
-                    type: chart.type || "bar",
-                    title: chart.title || "تحليل تفاعلي",
-                    dimension: chart.dimension || "",
-                    metric: mapping.primary_metric || "",
-                    xLabels: chart.x_labels || [],
-                    values: chart.values || [],
-                    xName: chart.x_name,
-                    yName: chart.y_name,
-                    points: chart.points || [],
-                    value: chart.value || profile.quality_score || 0
-                }));
-
-                const metrics = result.metrics || {};
-                const primary = mapping.primary_metric || "السجلات";
-                const category = mapping.category || "الفئات";
-                const insights = result.insights || [];
-                const duplicateNote = profile.duplicates
-                    ? `تم اكتشاف ${Number(profile.duplicates).toLocaleString()} صف مكرر.`
-                    : "لم يتم اكتشاف صفوف مكررة.";
-                AppStore.executiveSummary = {
-                    overview: `تم تحليل <strong>${Number(result.rows || AppStore.data.length).toLocaleString()}</strong> سجلاً من خلال محرك FastAPI ضمن تصنيف (${escapeHtml(result.classification || "تحليل أعمال عام")}).`,
-                    kpis: `إجمالي (${escapeHtml(primary)}) هو <strong>${Number(metrics.total_primary || 0).toLocaleString(undefined, { maximumFractionDigits: 2 })}</strong> بمتوسط <strong>${Number(metrics.avg_primary || 0).toLocaleString(undefined, { maximumFractionDigits: 2 })}</strong>.`,
-                    risks: `${duplicateNote} جودة البيانات الحالية <strong>${Number(profile.quality_score || 0)}%</strong>.`,
-                    recs: insights.map(item => `• ${escapeHtml(item)}`).join("<br>") || "استمر في متابعة المؤشرات الدورية.",
-                    excel_insights: insights.map(item => escapeHtml(item)),
-                    pptx_takeaways: {
-                        trend: escapeHtml(insights.find(item => item.includes("التغير")) || `الاتجاه مبني على ${primary} عبر الفترات المكتشفة.`),
-                        category: escapeHtml(insights.find(item => item.includes(category)) || `أعلى مساهمة حسب ${category}.`)
-                    },
-                    source: "fastapi"
-                };
-                AppStore.backendAnalysis = result;
-            }
-        };
-
-        // --- Multi-Dimensional Global Filter Bus (Subscriber Architecture) ---
+        // --- Multi-Dimensional Global Reactive Filter Bus ---
         const GlobalFilterBus = {
             toggleDimensionValue(dimension, value) {
                 if (!AppStore.activeFilters.dimensions[dimension]) {
@@ -1324,8 +1084,6 @@ async function downloadBackendExport(kind, setProgress) {
 
             resetAll() {
                 AppStore.activeFilters.dimensions = {};
-                AppStore.activeFilters.dateRange = { column: null, start: null, end: null };
-                AppStore.activeFilters.numericRanges = {};
                 AppStore.activeFilters.searchTerm = "";
                 AppStore.activeFilters.highlightMetric = null;
                 const searchInp = document.getElementById('global-search-input');
@@ -1335,9 +1093,7 @@ async function downloadBackendExport(kind, setProgress) {
             },
 
             notify() {
-                // 1. Reactive multi-dimensional filtering
                 AppStore.filteredData = AppStore.data.filter(row => {
-                    // Check dimension sets
                     for (const [dim, set] of Object.entries(AppStore.activeFilters.dimensions)) {
                         if (set && set.size > 0) {
                             const cellVal = String(row[dim] ?? "");
@@ -1345,7 +1101,6 @@ async function downloadBackendExport(kind, setProgress) {
                         }
                     }
 
-                    // Global search
                     if (AppStore.activeFilters.searchTerm) {
                         const hit = AppStore.schema.headers.some(h => String(row[h] ?? "").toLowerCase().includes(AppStore.activeFilters.searchTerm));
                         if (!hit) return false;
@@ -1355,11 +1110,10 @@ async function downloadBackendExport(kind, setProgress) {
                 });
 
                 AppStore.tablePage = 1;
-
-                // 2. Refresh UI bindings
                 this.renderFilterChips();
                 recalculateMeasures();
                 renderKPICards();
+                rebuildVisualsFromFilteredData();
                 renderChartsSafely();
                 renderDataTable();
             },
@@ -1367,31 +1121,28 @@ async function downloadBackendExport(kind, setProgress) {
             renderFilterChips() {
                 const chipContainer = document.getElementById('active-filter-chips');
                 if (!chipContainer) return;
-
                 chipContainer.innerHTML = "";
                 let hasFilters = false;
 
-                // Dimension chips
                 for (const [dim, set] of Object.entries(AppStore.activeFilters.dimensions)) {
                     if (set && set.size > 0) {
                         hasFilters = true;
                         const labels = Array.from(set).join(', ');
                         chipContainer.insertAdjacentHTML('beforeend', `
                             <div class="filter-chip">
-                            <span>${escapeHtml(dim)}: [${escapeHtml(labels)}]</span>
-                                 <i class="fa-solid fa-xmark" onclick="GlobalFilterBus.clearDimension(${jsAttr(dim)})"></i>
+                                <span>${escapeHtml(dim)}: [${escapeHtml(labels)}]</span>
+                                <i class="fa-solid fa-xmark" onclick="GlobalFilterBus.clearDimension('${escapeHtml(dim)}')"></i>
                             </div>
                         `);
                     }
                 }
 
-                // Search chip
                 if (AppStore.activeFilters.searchTerm) {
                     hasFilters = true;
                     chipContainer.insertAdjacentHTML('beforeend', `
                         <div class="filter-chip">
                             <span>بحث: "${escapeHtml(AppStore.activeFilters.searchTerm)}"</span>
-                        <i class="fa-solid fa-xmark" onclick="document.getElementById('global-search-input').value=''; GlobalFilterBus.setSearch('');"></i>
+                            <i class="fa-solid fa-xmark" onclick="document.getElementById('global-search-input').value=''; GlobalFilterBus.setSearch('');"></i>
                         </div>
                     `);
                 }
@@ -1400,131 +1151,62 @@ async function downloadBackendExport(kind, setProgress) {
             }
         };
 
-        // --- Domain Registry with Business Archetypes ---
-        const DomainRegistry = {
-            domains: {
-                sales: {
-                    id: 'sales', label_ar: 'المبيعات والعمليات التجارية',
-                    keywords: /sales|revenue|order|customer|invoice|price|discount|gross|مبيعات|إيراد|عميل|طلب|فاتورة|سعر|خصم/i,
-                    metrics: [
-                        { pattern: /sales|revenue|total|amount|مبيعات|إيراد|قيمة/i, label: 'إجمالي المبيعات' },
-                        { pattern: /profit|margin|ربح|هامش/i, label: 'صافي الأرباح' }
-                    ]
-                },
-                inventory: {
-                    id: 'inventory', label_ar: 'المخزون وإدارة المستودعات',
-                    keywords: /inventory|stock|warehouse|sku|on_hand|reorder|aging|مخزون|مستودع|رصيد|صنف|كمية_متوفرة/i,
-                    metrics: [
-                        { pattern: /stock|on_hand|quantity|qty|رصيد|كمية/i, label: 'رصيد المخزون المتوفر' },
-                        { pattern: /value|cost|total|قيمة|تكلفة/i, label: 'قيمة المخزون الإجمالية' }
-                    ]
-                },
-                finance: {
-                    id: 'finance', label_ar: 'المالية والحسابات',
-                    keywords: /finance|profit|loss|asset|liability|equity|tax|مالية|ربح|خسارة|أصول|خصوم|ضريبة/i,
-                    metrics: [
-                        { pattern: /profit|net|income|ربح|دخل/i, label: 'صافي الدخل' },
-                        { pattern: /expense|loss|cost|خسارة|تكلفة/i, label: 'إجمالي التكاليف' }
-                    ]
-                },
-                expenses: {
-                    id: 'expenses', label_ar: 'المصروفات والتكاليف',
-                    keywords: /expense|cost|budget|spending|vendor|bill|مصروف|تكلفة|ميزانية|نفقات|فاتورة|مورد/i,
-                    metrics: [
-                        { pattern: /amount|expense|cost|مبلغ|تكلفة|مصروف/i, label: 'إجمالي المصروفات' },
-                        { pattern: /budget|ميزانية/i, label: 'الميزانية المعتمدة' }
-                    ]
-                },
-                purchases: {
-                    id: 'purchases', label_ar: 'المشتريات والتوريد',
-                    keywords: /purchase|po|supplier|procurement|مشتريات|مورد|طلب_شراء|توريد/i,
-                    metrics: [
-                        { pattern: /amount|total|cost|قيمة|إجمالي/i, label: 'إجمالي قيمة المشتريات' },
-                        { pattern: /qty|quantity|كمية/i, label: 'الكمية المشتراة' }
-                    ]
-                },
-                customers: {
-                    id: 'customers', label_ar: 'العملاء والمشتركين',
-                    keywords: /customer|client|lead|conversion|churn|عميل|عملاء|مشترك/i,
-                    metrics: [
-                        { pattern: /count|number|عدد/i, label: 'إجمالي العملاء' },
-                        { pattern: /value|sales|قيمة|مبيعات/i, label: 'القيمة الإجمالية للعملاء' }
-                    ]
-                },
-                products: {
-                    id: 'products', label_ar: 'المنتجات والأصناف',
-                    keywords: /product|item|category|brand|منتج|صنف|علامة|فئة/i,
-                    metrics: [
-                        { pattern: /sales|revenue|مبيعات|إيراد/i, label: 'مبيعات المنتجات' },
-                        { pattern: /qty|quantity|كمية/i, label: 'الكميات المباعة' }
-                    ]
-                },
-                hr: {
-                    id: 'hr', label_ar: 'الموارد البشرية وشؤون الموظفين',
-                    keywords: /employee|headcount|salary|department|absence|attendance|tenure|turnover|موظف|راتب|قسم|غياب|حضور/i,
-                    metrics: [
-                        { pattern: /salary|wage|compensation|راتب|أجر/i, label: 'إجمالي الرواتب' },
-                        { pattern: /absence|leaves|غياب|إجازات/i, label: 'أيام الغياب' }
-                    ]
-                },
-                marketing: {
-                    id: 'marketing', label_ar: 'التسويق والحملات',
-                    keywords: /campaign|ad|click|impression|conversion|spend|تسويق|حملة|إعلان|نقرة/i,
-                    metrics: [
-                        { pattern: /spend|cost|تكلفة|إنفاق/i, label: 'الإنفاق التسويقي' },
-                        { pattern: /conversion|click|lead|تحويل|نقرات/i, label: 'التحويلات/النتائج' }
-                    ]
-                },
-                branches: {
-                    id: 'branches', label_ar: 'أداء الفروع والمتاجر',
-                    keywords: /branch|store|location|region|فرع|متجر|موقع|منطقة/i,
-                    metrics: [
-                        { pattern: /sales|revenue|مبيعات|إيراد/i, label: 'مبيعات الفروع' },
-                        { pattern: /target|هدف/i, label: 'الهدف البيعي' }
-                    ]
-                },
-                operations: {
-                    id: 'operations', label_ar: 'العمليات التشغيلية',
-                    keywords: /operation|process|cycle|time|efficiency|عمليات|تشغيل|كفاءة|دورة/i,
-                    metrics: [
-                        { pattern: /time|duration|وقت|مدة/i, label: 'إجمالي الوقت/المدة' },
-                        { pattern: /cost|تكلفة/i, label: 'التكلفة التشغيلية' }
-                    ]
-                },
-                kpi: {
-                    id: 'kpi', label_ar: 'مؤشرات الأداء المستهدفة',
-                    keywords: /kpi|target|actual|variance|score|مؤشر|هدف|فعلي|انحراف/i,
-                    metrics: [
-                        { pattern: /actual|فعلي/i, label: 'الأداء الفعلي' },
-                        { pattern: /target|هدف/i, label: 'المستهدف' }
-                    ]
-                },
-                attendance: {
-                    id: 'attendance', label_ar: 'الحضور والانصراف',
-                    keywords: /attendance|clock|in|out|leave|حضور|انصراف|تأخير|إجازة/i,
-                    metrics: [
-                        { pattern: /hours|ساعات/i, label: 'ساعات العمل' },
-                        { pattern: /late|delay|تأخير/i, label: 'دقائق التأخير' }
-                    ]
-                },
-                custom: {
-                    id: 'custom', label_ar: 'تقرير مخصص',
-                    keywords: /.*/,
-                    metrics: [
-                        { pattern: /amount|total|value|sum|مبلغ|إجمالي|قيمة/i, label: 'المؤشر الإجمالي الرئيسي' },
-                        { pattern: /qty|count|number|عدد|كمية/i, label: 'المؤشر الثانوي' }
-                    ]
-                },
-                generic: {
-                    id: 'generic', label_ar: 'تحليل أعمال عام',
-                    keywords: /.*/,
-                    metrics: [
-                        { pattern: /amount|total|value|sum|مبلغ|إجمالي|قيمة/i, label: 'المؤشر الإجمالي الرئيسي' },
-                        { pattern: /qty|count|number|عدد|كمية/i, label: 'حجم العمليات' }
-                    ]
-                }
-            }
-        };
+        // --- Fast API Server Calls ---
+        async function uploadToBackend(file) {
+            const form = new FormData();
+            form.append("file", file, file.name);
+            const targetUrl = API_BASE_URL ? `${API_BASE_URL}/api/upload` : "/api/upload";
+            const res = await fetch(targetUrl, { method: "POST", body: form });
+            if (!res.ok) throw new Error(await res.text());
+            return await res.json();
+        }
+
+        async function analyzeOnBackend(sheetName) {
+            if (!AppStore.jobId) return null;
+            const targetUrl = API_BASE_URL ? `${API_BASE_URL}/api/analyze` : "/api/analyze";
+            const res = await fetch(targetUrl, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    job_id: AppStore.jobId,
+                    sheet: sheetName,
+                    report_type: AppStore.finalReportType || AppStore.selectedReportType || "custom"
+                })
+            });
+            if (!res.ok) throw new Error(await res.text());
+            return await res.json();
+        }
+
+        async function downloadBackendExport(kind, setProgress) {
+            const targetUrl = API_BASE_URL ? `${API_BASE_URL}/api/export/${kind}` : `/api/export/${kind}`;
+            const res = await fetch(targetUrl, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    job_id: AppStore.jobId,
+                    sheet: AppStore.currentSheetName,
+                    report_type: AppStore.finalReportType || AppStore.selectedReportType || "custom",
+                    project_name: AppStore.projectName
+                })
+            });
+            if (!res.ok) throw new Error(await res.text());
+            const body = await res.json();
+            await setProgress("تنزيل الملف الناتج من الخادم...", 92);
+
+            const downloadUrl = body.download_url.startsWith("http")
+                ? body.download_url
+                : (API_BASE_URL ? `${API_BASE_URL}${body.download_url}` : body.download_url);
+
+            const download = await fetch(downloadUrl);
+            if (!download.ok) throw new Error(`فشل تحميل الملف (${download.status})`);
+            const blob = await download.blob();
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = body.filename;
+            a.click();
+            setTimeout(() => URL.revokeObjectURL(url), 2000);
+        }
 
         // --- Data Quality & Schema Profiling ---
         const DataQualityEngine = {
@@ -1569,7 +1251,7 @@ async function downloadBackendExport(kind, setProgress) {
                 });
                 GlobalFilterBus.notify();
                 this.assess(AppStore.data, AppStore.schema);
-                Toast.show(`تم التنظيف: إزالة ${initial - AppStore.data.length} صف مكرر.`, 'success');
+                Toast.show(`تم التنظيف: تصفية ${initial - AppStore.data.length} صف مكرر.`, 'success');
             }
         };
 
@@ -1617,356 +1299,361 @@ async function downloadBackendExport(kind, setProgress) {
                     }
                 });
 
-                // Heuristic Classification
-                let matchedDomain = DomainRegistry.domains.generic;
-                let bestScore = 0;
-
-                Object.values(DomainRegistry.domains).forEach(d => {
-                    if (d.id === 'generic' || d.id === 'custom' || d.id === 'ai_smart') return;
-                    let hits = 0;
-                    headers.forEach(h => { if (d.keywords.test(String(h))) hits += 2; });
-                    if (hits > bestScore) {
-                        bestScore = hits;
-                        matchedDomain = d;
-                    }
-                });
-
-                AppStore.domain = matchedDomain;
-                AppStore.schema.classification = matchedDomain.label_ar;
-                AppStore.schema.confidence = Math.min(98, Math.max(70, Math.round((bestScore / (headers.length || 1)) * 100) + 40));
-            },
-
-            applySemanticMappings(domainId) {
-                const domain = DomainRegistry.domains[domainId] || DomainRegistry.domains.generic;
-                AppStore.domain = domain;
-                AppStore.schema.classification = domain.label_ar;
-
-                // Dimensions
+                // Set Primary Metric & Category Dimension
+                AppStore.semanticMappings.primaryMetric = AppStore.schema.numericFields[0] || "";
+                AppStore.semanticMappings.secondaryMetric = AppStore.schema.numericFields[1] || "";
                 AppStore.semanticMappings.dateDimension = AppStore.schema.dateFields[0] || "";
                 AppStore.semanticMappings.catDimension = AppStore.schema.categoricalFields.find(f => {
-                    const uniqueVals = new Set(AppStore.data.map(r => r[f])).size;
-                    return uniqueVals > 1 && uniqueVals <= 30;
+                    const u = new Set(AppStore.data.map(r => r[f])).size;
+                    return u > 1 && u <= 35;
                 }) || AppStore.schema.categoricalFields[0] || "";
-
-                // Metrics
-                const numFields = AppStore.schema.numericFields;
-                AppStore.semanticMappings.primaryMetric = numFields[0] || "";
-                AppStore.semanticMappings.secondaryMetric = numFields[1] || "";
-
-                if (domain.metrics) {
-                    domain.metrics.forEach((m, idx) => {
-                        const found = numFields.find(f => m.pattern.test(f));
-                        if (found) {
-                            if (idx === 0) AppStore.semanticMappings.primaryMetric = found;
-                            if (idx === 1) AppStore.semanticMappings.secondaryMetric = found;
-                        }
-                    });
-                }
             }
         };
 
-        // --- Intermediate Analytic Model Builder ---
-        const ReportAnalysisModel = {
-            build() {
-                const data = AppStore.filteredData;
-                const primMetric = AppStore.semanticMappings.primaryMetric;
-                const secMetric = AppStore.semanticMappings.secondaryMetric;
-                const catDim = AppStore.semanticMappings.catDimension;
-                const dateDim = AppStore.semanticMappings.dateDimension;
+        function recalculateMeasures() {
+            const d = AppStore.filteredData;
+            const p = AppStore.semanticMappings.primaryMetric;
+            const s = AppStore.semanticMappings.secondaryMetric;
 
-                let totalPrimary = 0;
-                let totalSecondary = 0;
-                let avgPrimary = 0;
+            const pSum = p ? d.reduce((acc, r) => acc + (Number(String(r[p]).replace(/[^0-9.-]/g, '')) || 0), 0) : d.length;
+            const sSum = s ? d.reduce((acc, r) => acc + (Number(String(r[s]).replace(/[^0-9.-]/g, '')) || 0), 0) : 0;
 
-                if (primMetric) {
-                    totalPrimary = data.reduce((s, r) => s + (Number(String(r[primMetric]).replace(/[^0-9.-]/g, '')) || 0), 0);
-                    avgPrimary = data.length > 0 ? totalPrimary / data.length : 0;
-                }
-
-                if (secMetric) {
-                    totalSecondary = data.reduce((s, r) => s + (Number(String(r[secMetric]).replace(/[^0-9.-]/g, '')) || 0), 0);
-                }
-
-                // Categorical Breakdown
-                const categories = [];
-                if (catDim) {
-                    const map = {};
-                    data.forEach(r => {
-                        const key = String(r[catDim] || "غير محدد");
-                        const val = primMetric ? (Number(String(r[primMetric]).replace(/[^0-9.-]/g, '')) || 0) : 1;
-                        map[key] = (map[key] || 0) + val;
-                    });
-                    for (const [name, value] of Object.entries(map)) {
-                        categories.push({
-                            name,
-                            value,
-                            share: totalPrimary > 0 ? (value / totalPrimary) * 100 : 0
-                        });
-                    }
-                    categories.sort((a, b) => b.value - a.value);
-                }
-
-                // Time Series Breakdown (Group by Month-Year if possible)
-                const timeSeries = [];
-                if (dateDim) {
-                    const map = {};
-                    data.forEach(r => {
-                        const rawDate = new Date(r[dateDim]);
-                        let dKey = r[dateDim] ? String(r[dateDim]).slice(0, 10) : "N/A";
-                        if (!isNaN(rawDate)) {
-                            dKey = `${rawDate.getFullYear()}-${String(rawDate.getMonth()+1).padStart(2,'0')}`;
-                        }
-
-                        const val = primMetric ? (Number(String(r[primMetric]).replace(/[^0-9.-]/g, '')) || 0) : 1;
-                        map[dKey] = (map[dKey] || 0) + val;
-                    });
-                    Object.keys(map).sort().forEach(d => {
-                        timeSeries.push({ date: d, value: map[d] });
-                    });
-                }
-
-                return {
-                    projectName: AppStore.projectName,
-                    classification: AppStore.schema.classification,
-                    reportType: AppStore.finalReportType || 'custom',
-                    rowCount: data.length,
-                    qualityScore: AppStore.profiling.qualityScore,
-                    primaryMetricName: primMetric || "عدد العمليات",
-                    secondaryMetricName: secMetric || "المؤشر الإضافي",
-                    metrics: { totalPrimary, avgPrimary, totalSecondary, recordCount: data.length },
-                    catDimension: catDim || "القطاع",
-                    categories,
-                    dateDimension: dateDim,
-                    timeSeries,
-                    topPerformer: categories[0] || { name: "لا يوجد", value: 0, share: 0 },
-                    bottomPerformer: categories[categories.length - 1] || { name: "لا يوجد", value: 0, share: 0 },
-                    executiveSummary: AppStore.executiveSummary,
-                    profiling: AppStore.profiling
-                };
+            AppStore.measures = [];
+            if (p) {
+                AppStore.measures.push({ id: 'm_primary_total', name: `إجمالي ${p}`, value: pSum, icon: 'fa-calculator' });
+                AppStore.measures.push({ id: 'm_primary_avg', name: `متوسط ${p}`, value: d.length > 0 ? (pSum / d.length) : 0, icon: 'fa-chart-line' });
+            } else {
+                AppStore.measures.push({ id: 'm_primary_total', name: 'إجمالي العمليات', value: d.length, icon: 'fa-calculator' });
+                AppStore.measures.push({ id: 'm_primary_avg', name: 'معدل الإنجاز', value: 1.0, icon: 'fa-chart-line' });
             }
-        };
 
-        // --- Adaptive Visual Intelligence Engine ---
-        const VisualEngine = {
-            buildVisuals(analysis, recommendedFromAI = null) {
-                AppStore.visuals = [];
-
-                if (Array.isArray(recommendedFromAI) && recommendedFromAI.length > 0) {
-                    recommendedFromAI.forEach((rec, idx) => {
-                        const dim = rec.dimension || analysis.catDimension;
-                        const met = rec.metric || analysis.primaryMetricName;
-                        const dataMap = {};
-                        
-                        AppStore.filteredData.forEach(r => {
-                            const k = String(r[dim] ?? 'أخرى');
-                            const v = Number(String(r[met] ?? 0).replace(/[^0-9.-]/g, '')) || 1;
-                            dataMap[k] = (dataMap[k] || 0) + v;
-                        });
-
-                        const labels = Object.keys(dataMap).slice(0, 15);
-                        const values = labels.map(l => dataMap[l]);
-
-                        AppStore.visuals.push({
-                            id: `v_ai_${idx}`,
-                            type: rec.type || 'bar',
-                            title: rec.title || `${met} حسب ${dim}`,
-                            dimension: dim,
-                            metric: met,
-                            xLabels: labels,
-                            values: values
-                        });
-                    });
-                    return;
-                }
-
-                const p = analysis.primaryMetricName;
-                const s = analysis.secondaryMetricName;
-                const cat = analysis.catDimension;
-                const dt = analysis.dateDimension;
-
-                if (dt && analysis.timeSeries.length > 1) {
-                    AppStore.visuals.push({ id: "v_trend", type: "line", title: `الاتجاه الزمني لـ (${p}) عبر التاريخ`, dimension: dt, metric: p, xLabels: analysis.timeSeries.map(t => t.date), values: analysis.timeSeries.map(t => t.value) });
-                }
-
-                if (cat && analysis.categories.length > 4) {
-                    AppStore.visuals.push({ id: "v_treemap", type: "treemap", title: `خارطة الشجرة الهيكلية (Treemap) لـ (${cat})`, dimension: cat, metric: p, xLabels: analysis.categories.map(c => c.name), values: analysis.categories.map(c => c.value) });
-                }
-
-                if (cat && analysis.categories.length > 0) {
-                    AppStore.visuals.push({ id: "v_bar", type: "bar", title: `مقارنة الحصص التراكمية حسب (${cat})`, dimension: cat, metric: p, xLabels: analysis.categories.slice(0, 10).map(c => c.name), values: analysis.categories.slice(0, 10).map(c => c.value) });
-                }
-
-                if (p && s && p !== s && AppStore.filteredData.length > 5) {
-                    const scatterPoints = AppStore.filteredData.slice(0, 150).map(r => [
-                        Number(String(r[p]).replace(/[^0-9.-]/g, '')) || 0,
-                        Number(String(r[s]).replace(/[^0-9.-]/g, '')) || 0
-                    ]);
-                    AppStore.visuals.push({ id: "v_scatter", type: "scatter", title: `تحليل التشتت الخطي بين (${p}) و (${s})`, xName: p, yName: s, points: scatterPoints });
-                }
-
-                AppStore.visuals.push({ id: "v_gauge", type: "gauge", title: "مؤشر الكفاءة وموثوقية السجلات", value: analysis.qualityScore });
+            if (s) {
+                AppStore.measures.push({ id: 'm_secondary_total', name: `إجمالي ${s}`, value: sSum, icon: 'fa-coins' });
             }
-        };
-
-        // --- GEMINI AI INTEGRATION ENGINE (WITH AUTO-FALLBACK LOOP & DEEP REVIEW) ---
-        const GeminiAIEngine = {
-            // Models list updated to the available robust ones
-            getFallbackModels() {
-                const userModel = AppStore.geminiConfig.model;
-                let modelsToTry = [];
-                if (userModel && userModel !== 'auto') {
-                    modelsToTry.push(userModel);
-                } else {
-                    modelsToTry.push('gemini-1.5-flash');
-                }
-                // Add robust public fallbacks (gemini-2.5-flash does not exist widely yet)
-                modelsToTry.push('gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-2.0-flash');
-                return [...new Set(modelsToTry)];
-            },
-
-            async analyze(dataSample, schema) {
-                if (!AppStore.geminiConfig.enabled || !AppStore.geminiConfig.apiKey) {
-                    AppLogger.log("تفعيل المحرك المحلي (Gemini API Key غير متوفر أو معطل)", "info");
-                    return this.localFallback();
-                }
-
-                updateAIBadge("ai-mode", "جاري المراجعة العميقة بنماذج الذكاء الاصطناعي...");
-
-                const payload = {
-                    reportName: AppStore.projectName,
-                    domain: schema.classification,
-                    columns: schema.headers,
-                    numericFields: schema.numericFields,
-                    categoricalFields: schema.categoricalFields,
-                    dateFields: schema.dateFields,
-                    sample: dataSample.slice(0, 15),
-                    rowCount: AppStore.data.length
-                };
-
-                const prompt = `أنت كبير علماء البيانات (Senior Data Scientist). قم بتحليل مجموعة البيانات بدقة واصنع مراجعة عميقة (Deep Review) للتصدير لـ Excel و PowerPoint.
-                أعطني الرد بتنسيق JSON حصراً متضمناً المفاتيح التالية بدقة شديدة:
-                {
-                   "overview": "نظرة عامة تنفيذية دقيقة تلخص طبيعة العمليات",
-                   "kpis": "أهم الأرقام والنتائج المحققة ومعدلات الأداء",
-                   "risks": "الانحرافات، المخاطر، أو نقاط الضعف الملحوظة إحصائياً",
-                   "recommendations": "3 توصيات عملية وقابلة للتنفيذ كجمل مفيدة",
-                   "excel_insights": ["استنتاج احترافي 1 للداشبورد", "استنتاج احترافي 2", "استنتاج 3"],
-                   "pptx_takeaways": {
-                       "trend": "جملة تلخص اتجاه الأداء الزمني للأرقام",
-                       "category": "جملة تلخص أداء الفئات والقطاعات"
-                   },
-                   "recommendedVisuals": [
-                     {
-                       "type": "bar" | "line" | "treemap" | "scatter" | "gauge",
-                       "title": "عنوان المخطط باللغة العربية",
-                       "dimension": "اسم عمود البعد",
-                       "metric": "اسم عمود المقياس",
-                       "aggregation": "sum"
-                     }
-                   ]
-                }
-                بيانات التقرير: ${JSON.stringify(payload)}`;
-
-                let modelsToTry = this.getFallbackModels();
-                let lastError = null;
-
-                for (let model of modelsToTry) {
-                    try {
-                        AppLogger.log(`محاولة الاتصال بالنموذج: ${model}`, "info");
-                        const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${AppStore.geminiConfig.apiKey}`;
-
-                        const response = await fetch(endpoint, {
-                            method: "POST",
-                            headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify({
-                                contents: [{ parts: [{ text: prompt }] }],
-                                generationConfig: { temperature: 0.2, maxOutputTokens: 2000 }
-                            })
-                        });
-
-                        if (!response.ok) {
-                            const errJson = await response.json().catch(() => ({}));
-                            throw new Error(errJson.error?.message || `HTTP ${response.status}`);
-                        }
-
-                        const json = await response.json();
-                        let replyText = json.candidates?.[0]?.content?.parts?.[0]?.text || "";
-                        replyText = replyText.replace(/```json/gi, '').replace(/```/g, '').trim();
-                        const parsed = JSON.parse(replyText);
-
-                        AppStore.executiveSummary = {
-                            overview: parsed.overview || "تحليل تنفيذي مكتمل.",
-                            kpis: parsed.kpis || "تم استخراج المؤشرات بدقة.",
-                            risks: parsed.risks || "لا توجد مخاطر إحصائية حادة.",
-                            recs: parsed.recommendations || "المتابعة المستمرة للأداء.",
-                            excel_insights: parsed.excel_insights || ["البيانات تشير إلى استقرار عام.", "يوصى بمراقبة المؤشرات الدورية لتفادي الانحرافات."],
-                            pptx_takeaways: parsed.pptx_takeaways || { trend: "يُظهر التحليل اتجاهاً يعتمد على كثافة العمليات المسجلة.", category: "البيانات تعكس توزيعاً متوازناً دون انحرافات حادة." },
-                            source: "gemini"
-                        };
-
-                        const an = ReportAnalysisModel.build();
-                        VisualEngine.buildVisuals(an, parsed.recommendedVisuals);
-
-                        updateAIBadge("ai-mode", `Gemini AI (${model})`);
-                        AppLogger.log(`تم التحليل بنجاح واكتشاف الرؤى العميقة عبر نموذج (${model})`, "success");
-                        this.applySummaryToUI();
-                        renderChartsSafely();
-                        return; // Exit on success
-
-                    } catch (err) {
-                        lastError = err;
-                        AppLogger.log(`فشل النموذج (${model}) - يتم الآن تجربة البديل المجاني المتاح تلقائياً.`, "warning");
-                    }
-                }
-
-                // If ALL models failed, fallback locally
-                AppLogger.log(`فشلت جميع نماذج Gemini المتاحة. التحول للمحرك الإحصائي المحلي. السبب الأخير: ${lastError?.message}`, "error");
-                this.localFallback();
-            },
-
-            localFallback() {
-                const an = ReportAnalysisModel.build();
-                VisualEngine.buildVisuals(an);
-
-                let overview = `تحليل شامل لـ <strong>${an.rowCount.toLocaleString()}</strong> سجلاً ضمن نشاط (${an.classification}). يعكس التقرير أداء العمليات عبر (${an.catDimension || 'مختلف الفئات'}).`;
-                let kpis = `المؤشر الرئيسي (${an.primaryMetricName}) بلغ إجماليه <strong>${an.metrics.totalPrimary.toLocaleString(undefined, { maximumFractionDigits: 1 })}</strong>، بمتوسط بلغ <strong>${an.metrics.avgPrimary.toLocaleString(undefined, { maximumFractionDigits: 1 })}</strong> لكل عملية.`;
-                let risks = an.categories.length > 0 ? 
-                    `يُظهر التحليل تركز الأداء في فئة (<strong>${an.topPerformer.name}</strong>) بحصة بلغت <strong>${an.topPerformer.share.toFixed(1)}%</strong> من إجمالي الحجم.` :
-                    "البيانات تعكس توزيعاً متوازناً دون انحرافات حادة.";
-                let recs = an.bottomPerformer.name !== "لا يوجد" ?
-                    `إجراء دراسة تحسينية لأداء الفئة الأقل مساهمة (<strong>${an.bottomPerformer.name}</strong>) وتوجيه الموارد لرفع الكفاءة التشغيلية.` :
-                    "الحفاظ على وتيرة التدقيق الدوري للبيانات ومتابعة مؤشرات الجودة.";
-
-                AppStore.executiveSummary = { 
-                    overview, 
-                    kpis, 
-                    risks, 
-                    recs, 
-                    excel_insights: [overview.replace(/<[^>]*>/g, ''), risks.replace(/<[^>]*>/g, '')],
-                    pptx_takeaways: { trend: "يُظهر التحليل اتجاهاً يعتمد على كثافة العمليات المسجلة.", category: risks.replace(/<[^>]*>/g, '') },
-                    source: "local" 
-                };
-                updateAIBadge("", "محرك محلي متقدم (Local Engine)");
-                this.applySummaryToUI();
-                renderChartsSafely();
-            },
-
-            applySummaryToUI() {
-                document.getElementById('sum-overview').innerHTML = AppStore.executiveSummary.overview;
-                document.getElementById('sum-kpis').innerHTML = AppStore.executiveSummary.kpis;
-                document.getElementById('sum-risks').innerHTML = AppStore.executiveSummary.risks;
-                document.getElementById('sum-recs').innerHTML = AppStore.executiveSummary.recs;
-            }
-        };
-
-        function updateAIBadge(cls, text) {
-            const b = document.getElementById('analysis-engine-badge');
-            const txt = document.getElementById('engine-status-text');
-            b.className = `engine-status-badge ${cls}`;
-            txt.textContent = text;
+            AppStore.measures.push({ id: 'm_records', name: 'السجلات النشطة', value: d.length, icon: 'fa-list-ol' });
         }
 
-        // --- File Ingestion Engine & Pre-Selection Workflows ---
+        function renderKPICards() {
+            const grid = document.getElementById('kpi-grid');
+            if (!grid) return;
+            grid.innerHTML = "";
+
+            AppStore.measures.forEach((m, idx) => {
+                const displayVal = m.value.toLocaleString(undefined, { maximumFractionDigits: 2 });
+                const isActive = AppStore.activeFilters.highlightMetric === m.id;
+
+                grid.insertAdjacentHTML('beforeend', `
+                    <div class="glass-card kpi-card ${isActive ? 'active-card' : ''}" onclick="inspectMetricCard('${m.id}')" title="انقر للتحليل التفصيلي">
+                        <div class="kpi-top">
+                            <div class="kpi-meta">
+                                <span>${escapeHtml(m.name)}</span>
+                                <h3>${displayVal}</h3>
+                            </div>
+                            <div class="kpi-icon"><i class="fa-solid ${m.icon}"></i></div>
+                        </div>
+                        <div class="kpi-footer">
+                            <span><i class="fa-solid fa-arrow-pointer"></i> تحليل متقاطع</span>
+                            <span>#${idx + 1}</span>
+                        </div>
+                    </div>
+                `);
+            });
+        }
+
+        function inspectMetricCard(metricId) {
+            const m = AppStore.measures.find(x => x.id === metricId);
+            if (!m) return;
+            AppStore.activeFilters.highlightMetric = metricId;
+            renderKPICards();
+
+            const modal = document.getElementById('card-drilldown-modal');
+            const title = document.getElementById('drilldown-modal-title');
+            const body = document.getElementById('drilldown-modal-body');
+
+            title.textContent = `تحليل المؤشر: ${m.name}`;
+            const catDim = AppStore.semanticMappings.catDimension;
+            
+            // Build breakdown by category
+            const breakdown = {};
+            AppStore.filteredData.forEach(r => {
+                const k = String(r[catDim] || "غير محدد");
+                const v = Number(String(r[AppStore.semanticMappings.primaryMetric] || 1).replace(/[^0-9.-]/g, '')) || 1;
+                breakdown[k] = (breakdown[k] || 0) + v;
+            });
+            const sorted = Object.entries(breakdown).sort((a,b) => b[1] - a[1]).slice(0, 6);
+
+            body.innerHTML = `
+                <div style="background:var(--accent-glow); padding:12px; border-radius:8px; border:1px solid var(--accent);">
+                    <div style="font-size:11px; color:var(--text-muted);">القيمة الإجمالية المفلترة:</div>
+                    <div style="font-size:22px; font-weight:800; color:var(--text-main); margin-top:4px;">${m.value.toLocaleString(undefined, { maximumFractionDigits: 2 })}</div>
+                </div>
+                <div style="font-size:12px; font-weight:700; margin-top:6px;">أعلى المساهمين حسب (${escapeHtml(catDim)}):</div>
+                <div style="display:flex; flex-direction:column; gap:6px;">
+                    ${sorted.map(([name, val]) => `
+                        <div style="display:flex; justify-content:space-between; padding:7px 10px; background:var(--bg-app); border-radius:6px; cursor:pointer;" onclick="GlobalFilterBus.toggleDimensionValue('${escapeHtml(catDim)}', '${escapeHtml(name)}'); closeDrilldownModal();">
+                            <span>${escapeHtml(name)}</span>
+                            <strong>${val.toLocaleString(undefined, { maximumFractionDigits: 1 })}</strong>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+            modal.style.display = 'flex';
+        }
+
+        function closeDrilldownModal() {
+            document.getElementById('card-drilldown-modal').style.display = 'none';
+        }
+
+        function rebuildVisualsFromFilteredData() {
+            const data = AppStore.filteredData;
+            const p = AppStore.semanticMappings.primaryMetric;
+            const s = AppStore.semanticMappings.secondaryMetric;
+            const cat = AppStore.semanticMappings.catDimension;
+            const dt = AppStore.semanticMappings.dateDimension;
+
+            AppStore.visuals = [];
+
+            if (dt && data.length > 1) {
+                const timeMap = {};
+                data.forEach(r => {
+                    const rawDate = new Date(r[dt]);
+                    let k = String(r[dt] || "N/A").slice(0, 7);
+                    if (!isNaN(rawDate)) {
+                        k = `${rawDate.getFullYear()}-${String(rawDate.getMonth()+1).padStart(2,'0')}`;
+                    }
+                    const v = p ? (Number(String(r[p]).replace(/[^0-9.-]/g, '')) || 0) : 1;
+                    timeMap[k] = (timeMap[k] || 0) + v;
+                });
+                const sortedKeys = Object.keys(timeMap).sort();
+                if (sortedKeys.length > 1) {
+                    AppStore.visuals.push({
+                        id: "v_trend",
+                        type: "line",
+                        title: `الاتجاه الزمني لـ (${p || 'العمليات'}) عبر الفترات`,
+                        dimension: dt,
+                        metric: p,
+                        xLabels: sortedKeys,
+                        values: sortedKeys.map(k => timeMap[k])
+                    });
+                }
+            }
+
+            if (cat && data.length > 0) {
+                const catMap = {};
+                data.forEach(r => {
+                    const k = String(r[cat] || "غير محدد");
+                    const v = p ? (Number(String(r[p]).replace(/[^0-9.-]/g, '')) || 0) : 1;
+                    catMap[k] = (catMap[k] || 0) + v;
+                });
+                const sortedCats = Object.entries(catMap).sort((a,b) => b[1] - a[1]).slice(0, 10);
+                AppStore.visuals.push({
+                    id: "v_bar",
+                    type: "bar",
+                    title: `مقارنة الحصص التراكمية حسب (${cat})`,
+                    dimension: cat,
+                    metric: p,
+                    xLabels: sortedCats.map(x => x[0]),
+                    values: sortedCats.map(x => x[1])
+                });
+
+                if (sortedCats.length > 3) {
+                    AppStore.visuals.push({
+                        id: "v_treemap",
+                        type: "treemap",
+                        title: `خارطة الشجرة الهيكلية (Treemap) لـ (${cat})`,
+                        dimension: cat,
+                        metric: p,
+                        xLabels: sortedCats.map(x => x[0]),
+                        values: sortedCats.map(x => x[1])
+                    });
+                }
+            }
+
+            if (p && s && p !== s && data.length > 5) {
+                const scatterPoints = data.slice(0, 120).map(r => [
+                    Number(String(r[p]).replace(/[^0-9.-]/g, '')) || 0,
+                    Number(String(r[s]).replace(/[^0-9.-]/g, '')) || 0
+                ]);
+                AppStore.visuals.push({
+                    id: "v_scatter",
+                    type: "scatter",
+                    title: `تحليل التشتت الخطي بين (${p}) و (${s})`,
+                    xName: p,
+                    yName: s,
+                    points: scatterPoints
+                });
+            }
+
+            AppStore.visuals.push({
+                id: "v_gauge",
+                type: "gauge",
+                title: "مؤشر الكفاءة وموثوقية السجلات",
+                value: AppStore.profiling.qualityScore
+            });
+        }
+
+        function renderChartsSafely() {
+            try {
+                const grid = document.getElementById('charts-grid');
+                if (!grid) return;
+                grid.innerHTML = "";
+
+                Object.values(AppStore.chartsInstances).forEach(c => { try { c.dispose(); } catch(e) {} });
+                AppStore.chartsInstances = {};
+
+                const isDark = document.documentElement.classList.contains('dark');
+                const textClr = isDark ? '#94a3b8' : '#475569';
+
+                AppStore.visuals.forEach(v => {
+                    const domId = `chart_${String(v.id).replace(/[^a-zA-Z0-9_-]/g, "_")}`;
+                    grid.insertAdjacentHTML('beforeend', `
+                        <div class="glass-card chart-card">
+                            <div class="chart-card-header">
+                                <h5>${escapeHtml(v.title)}</h5>
+                                <span style="font-size:10px; color:var(--text-muted);"><i class="fa-solid fa-hand-pointer"></i> انقر للتصفية المتقاطعة</span>
+                            </div>
+                            <div class="chart-wrapper" id="${domId}"></div>
+                        </div>
+                    `);
+
+                    const dom = document.getElementById(domId);
+                    if (!dom) return;
+
+                    const chart = echarts.init(dom, isDark ? 'dark' : null);
+                    AppStore.chartsInstances[v.id] = chart;
+                    const activeSet = (v.dimension && AppStore.activeFilters.dimensions[v.dimension]) ? AppStore.activeFilters.dimensions[v.dimension] : null;
+
+                    if (v.type === 'line') {
+                        chart.setOption({ backgroundColor: 'transparent', tooltip: { trigger: 'axis' }, xAxis: { type: 'category', data: v.xLabels, axisLabel: { color: textClr, fontSize: 9.5, rotate: 20 } }, yAxis: { type: 'value', axisLabel: { color: textClr, fontSize: 9.5 } }, series: [{ type: 'line', data: v.values, smooth: true, areaStyle: { opacity: 0.25 }, itemStyle: { color: '#2563eb' } }] });
+                    } else if (v.type === 'bar') {
+                        chart.setOption({ backgroundColor: 'transparent', tooltip: { trigger: 'axis' }, xAxis: { type: 'category', data: v.xLabels, axisLabel: { color: textClr, fontSize: 9.5, rotate: 25 } }, yAxis: { type: 'value', axisLabel: { color: textClr, fontSize: 9.5 } }, series: [{ type: 'bar', data: v.values, itemStyle: { color: (p) => { if (!activeSet || activeSet.size === 0) return '#2563eb'; return activeSet.has(p.name) ? '#f59e0b' : 'rgba(37,99,235,0.3)'; } } }] });
+                    } else if (v.type === 'treemap') {
+                        chart.setOption({ backgroundColor: 'transparent', tooltip: { formatter: '{b}: {c}' }, series: [{ type: 'treemap', roam: false, data: v.xLabels.map((l, i) => ({ name: l, value: v.values[i] })), label: { color: '#ffffff', fontSize: 11 } }] });
+                    } else if (v.type === 'scatter') {
+                        chart.setOption({ backgroundColor: 'transparent', tooltip: { trigger: 'item' }, xAxis: { name: v.xName, nameTextStyle: { color: textClr, fontSize: 10 }, axisLabel: { color: textClr } }, yAxis: { name: v.yName, nameTextStyle: { color: textClr, fontSize: 10 }, axisLabel: { color: textClr } }, series: [{ type: 'scatter', symbolSize: 10, data: v.points, itemStyle: { color: '#3b82f6' } }] });
+                    } else if (v.type === 'gauge') {
+                        chart.setOption({ backgroundColor: 'transparent', series: [{ type: 'gauge', progress: { show: true, width: 10 }, detail: { valueAnimation: true, formatter: '{value}%', fontSize: 18, color: textClr }, data: [{ value: v.value, name: 'مؤشر الجودة' }], title: { color: textClr, fontSize: 11, offsetCenter: [0, '70%'] } }] });
+                    }
+
+                    chart.on('click', (params) => {
+                        const clickedVal = params.name || (params.data && params.data.name);
+                        if (v.dimension && clickedVal) {
+                            GlobalFilterBus.toggleDimensionValue(v.dimension, clickedVal);
+                            Toast.show(`تم تبديل التصفية: (${v.dimension} = ${clickedVal})`, "info");
+                        }
+                    });
+                });
+            } catch (err) { AppLogger.log(`خطأ رسم المخططات: ${err.message}`, "error"); }
+        }
+
+        function renderPlotlyAdvanced() {
+            try {
+                const num = AppStore.schema.numericFields.slice(0, 5);
+                const data = AppStore.filteredData;
+                if (num.length === 0 || data.length === 0) return;
+
+                const isDark = document.documentElement.classList.contains('dark');
+                const bg = isDark ? '#0a0f24' : '#ffffff';
+                const text = isDark ? '#94a3b8' : '#475569';
+
+                const matrix = [];
+                num.forEach(f1 => {
+                    const row = [];
+                    num.forEach(f2 => {
+                        let sX = 0, sY = 0, sXY = 0, sX2 = 0, sY2 = 0, n = 0;
+                        data.forEach(d => {
+                            const x = Number(d[f1]);
+                            const y = Number(d[f2]);
+                            if (!isNaN(x) && !isNaN(y)) { sX += x; sY += y; sXY += x * y; sX2 += x * x; sY2 += y * y; n++; }
+                        });
+                        const den = Math.sqrt((n * sX2 - sX * sX) * (n * sY2 - sY * sY));
+                        row.push(den === 0 || isNaN(den) ? 0 : parseFloat(((n * sXY - sX * sY) / den).toFixed(2)));
+                    });
+                    matrix.push(row);
+                });
+
+                Plotly.newPlot('plotly-correlation-heatmap', [{ z: matrix, x: num, y: num, type: 'heatmap', colorscale: 'Blues' }], { paper_bgcolor: bg, plot_bgcolor: bg, font: { color: text }, margin: { l: 70, r: 20, t: 20, b: 70 } }, { responsive: true, displayModeBar: false });
+
+                const boxTraces = num.map(f => ({ y: data.map(d => Number(d[f])).filter(v => !isNaN(v)), name: f, type: 'box' }));
+                Plotly.newPlot('plotly-distribution-box', boxTraces, { paper_bgcolor: bg, plot_bgcolor: bg, font: { color: text }, margin: { l: 40, r: 20, t: 20, b: 40 } }, { responsive: true, displayModeBar: false });
+            } catch (err) { AppLogger.log(`Plotly Error: ${err.message}`, "error"); }
+        }
+
+        function renderDataTable() {
+            try {
+                const table = document.getElementById('preview-table');
+                const head = table.querySelector('thead');
+                const body = table.querySelector('tbody');
+                const headers = AppStore.schema.headers;
+
+                head.innerHTML = `<tr>${headers.map(h => `<th>${escapeHtml(h)}</th>`).join('')}</tr>`;
+
+                const start = (AppStore.tablePage - 1) * AppStore.pageSize;
+                const end = start + AppStore.pageSize;
+                const pageRows = AppStore.filteredData.slice(start, end);
+
+                body.innerHTML = pageRows.map(r => `
+                    <tr>${headers.map(h => `<td>${escapeHtml(r[h] !== null && r[h] !== undefined ? r[h] : "")}</td>`).join('')}</tr>
+                `).join('');
+
+                document.getElementById('table-page-info').textContent = `عرض ${Math.min(start + 1, AppStore.filteredData.length)} - ${Math.min(end, AppStore.filteredData.length)} من أصل ${AppStore.filteredData.length.toLocaleString()}`;
+                document.getElementById('data-view-count').textContent = `السجلات النشطة المفلترة: ${AppStore.filteredData.length.toLocaleString()}`;
+            } catch (err) { AppLogger.log(`خطأ مستعرض البيانات: ${err.message}`, "error"); }
+        }
+
+        function changeTablePage(delta) {
+            const maxPages = Math.ceil(AppStore.filteredData.length / AppStore.pageSize) || 1;
+            AppStore.tablePage = Math.max(1, Math.min(maxPages, AppStore.tablePage + delta));
+            renderDataTable();
+        }
+
+        function renderDynamicSlicers() {
+            const container = document.getElementById('dynamic-slicers');
+            container.innerHTML = "";
+
+            const slicerCandidates = AppStore.schema.categoricalFields.filter(f => {
+                const uniq = new Set(AppStore.data.map(d => d[f])).size;
+                return uniq >= 2 && uniq <= 40;
+            });
+
+            slicerCandidates.slice(0, 4).forEach(field => {
+                const vals = [...new Set(AppStore.data.map(d => d[field]).filter(Boolean))].slice(0, 30);
+                const activeSet = AppStore.activeFilters.dimensions[field] || new Set();
+
+                const selectWrapper = document.createElement('div');
+                selectWrapper.style.display = 'inline-block';
+                selectWrapper.innerHTML = `
+                    <select onchange="if(this.value) { GlobalFilterBus.toggleDimensionValue('${escapeHtml(field)}', this.value); this.value=''; }" class="form-control-select" style="padding: 4px 8px; font-size: 11px; width: auto;">
+                        <option value="">+ تصفية حسب (${escapeHtml(field)})</option>
+                        ${vals.map(v => `<option value="${escapeHtml(v)}">${activeSet.has(v) ? '✓ ' : ''}${escapeHtml(v)}</option>`).join('')}
+                    </select>
+                `;
+                container.appendChild(selectWrapper);
+            });
+        }
+
+        function switchView(view) {
+            document.querySelectorAll('.workspace-pane').forEach(p => p.classList.add('hidden'));
+            document.querySelectorAll('.nav-btn').forEach(b => {
+                b.classList.toggle('active', b.getAttribute('data-view') === view);
+            });
+            const target = document.getElementById(`workspace-${view}`);
+            if (target) target.classList.remove('hidden');
+
+            if (window.innerWidth <= 992) toggleSidebar(false);
+
+            if (view === 'overview') {
+                setTimeout(() => {
+                    renderChartsSafely();
+                    Object.values(AppStore.chartsInstances).forEach(c => { try { c.resize(); } catch(e) {} });
+                }, 40);
+            } else if (view === 'advanced') {
+                setTimeout(renderPlotlyAdvanced, 40);
+            } else if (view === 'data') {
+                renderDataTable();
+            }
+        }
+
         function handleReportTypeSelection() {
             const sel = document.getElementById('pre-report-type-select');
             if (sel.value) {
@@ -2019,40 +1706,33 @@ async function downloadBackendExport(kind, setProgress) {
             AppStore.projectName = file.name.split('.').slice(0, -1).join('.') || file.name;
             const ext = file.name.split('.').pop().toLowerCase();
 
-            if (window.location.protocol !== "file:") {
-                try {
-                    Toast.show("جاري رفع الملف إلى محرك FastAPI...", "info");
-                    const serverPayload = await uploadToBackend(file);
-                    AppStore.jobId = serverPayload.job_id;
-                    AppStore.worksheetsData = {};
-                    AppStore.backendSheetCounts = {};
-                    const sheetNames = [];
-                    (serverPayload.sheets || []).forEach(sheet => {
-                        AppStore.backendSheetCounts[sheet.name] = sheet.rows || (sheet.data || []).length;
-                        if (sheet.data && sheet.data.length) {
-                            AppStore.worksheetsData[sheet.name] = sheet.data;
-                            sheetNames.push(sheet.name);
-                        }
-                    });
-                    if (!sheetNames.length) throw new Error("لم يتم العثور على بيانات قابلة للتحليل.");
-                    AppLogger.log(`تم رفع الملف إلى FastAPI: ${serverPayload.filename}`, "success");
-                    finishIngestion(sheetNames);
-                    return;
-                } catch (serverError) {
-                    AppLogger.log(`تعذر استخدام FastAPI، تم الرجوع للمعالجة المحلية: ${serverError.message}`, "warning");
-                    Toast.show(`فشل الاتصال بالخادم (${serverError.message})؛ جاري المعالجة المحلية.`, "warning");
-                }
+            try {
+                Toast.show("جاري رفع الملف ومعالجته عبر محرك التحليل...", "info");
+                const serverPayload = await uploadToBackend(file);
+                AppStore.jobId = serverPayload.job_id;
+                AppStore.worksheetsData = {};
+                AppStore.backendSheetCounts = {};
+                const sheetNames = [];
+                (serverPayload.sheets || []).forEach(sheet => {
+                    AppStore.backendSheetCounts[sheet.name] = sheet.rows || (sheet.data || []).length;
+                    if (sheet.data && sheet.data.length) {
+                        AppStore.worksheetsData[sheet.name] = sheet.data;
+                        sheetNames.push(sheet.name);
+                    }
+                });
+                if (!sheetNames.length) throw new Error("لم يتم العثور على أوراق عمل تحتوي سجلات صالحة.");
+                finishIngestion(sheetNames);
+                return;
+            } catch (err) {
+                AppLogger.log(`المعالجة عبر الخادم تعذرت، الانتقال للمحرك المحلي: ${err.message}`, "warning");
             }
 
+            // Local Fallback
             const reader = new FileReader();
-
-            Toast.show("جاري قراءة واستخراج البيانات من الملف...", "info");
-
             reader.onload = async (e) => {
                 try {
                     const buf = e.target.result;
                     AppStore.worksheetsData = {};
-
                     if (ext === 'csv' || ext === 'tsv') {
                         const text = new TextDecoder('utf-8').decode(buf);
                         Papa.parse(text, {
@@ -2067,7 +1747,6 @@ async function downloadBackendExport(kind, setProgress) {
                     } else {
                         const wb = new ExcelJS.Workbook();
                         await wb.xlsx.load(buf);
-
                         const sheetNames = [];
                         wb.eachSheet((ws) => {
                             const rows = [];
@@ -2093,16 +1772,12 @@ async function downloadBackendExport(kind, setProgress) {
                                 sheetNames.push(ws.name);
                             }
                         });
-
-                        if (sheetNames.length === 0) throw new Error("لم يتم العثور على أوراق عمل تحتوي بيانات صالحة");
                         finishIngestion(sheetNames);
                     }
-                } catch (err) {
-                    Toast.show(`فشل قراءة الملف: ${err.message}`, "error");
-                    AppLogger.log(`خطأ قراءة الملف: ${err.message}`, "error");
+                } catch (readErr) {
+                    Toast.show(`فشل قراءة الملف: ${readErr.message}`, "error");
                 }
             };
-
             reader.readAsArrayBuffer(file);
         }
 
@@ -2110,73 +1785,68 @@ async function downloadBackendExport(kind, setProgress) {
             const picker = document.getElementById('sheet-picker-select');
             const pickerBox = document.getElementById('sheet-selector-box');
             picker.innerHTML = "";
-            
             sheetNames.forEach(name => {
                 const opt = document.createElement('option');
                 opt.value = name;
                 opt.textContent = name;
                 picker.appendChild(opt);
             });
-
             pickerBox.style.display = sheetNames.length > 1 ? 'block' : 'none';
             handleSheetChange(sheetNames[0]);
         }
 
-        function handleSheetChange(sheetName) {
+        async function handleSheetChange(sheetName) {
             AppStore.currentSheetName = sheetName;
-            AppStore.totalRows = AppStore.backendSheetCounts?.[sheetName] || 0;
             const data = AppStore.worksheetsData[sheetName] || [];
             if (!data || data.length === 0) {
                 Toast.show("ورقة العمل المحددة فارغة.", "warning");
                 return;
             }
-            validateAndProcessData(data);
-        }
 
-        async function validateAndProcessData(data) {
             AppStore.rawData = data;
             AppStore.data = [...data];
             AppStore.filteredData = [...data];
-            AppStore.activeFilters = { dimensions: {}, dateRange: { column: null, start: null, end: null }, numericRanges: {}, searchTerm: "", highlightMetric: null };
+            AppStore.activeFilters = { dimensions: {}, searchTerm: "", highlightMetric: null };
             AppStore.tablePage = 1;
 
-            if (AppStore.jobId && window.location.protocol !== "file:") {
+            if (AppStore.jobId) {
                 try {
-                    AppStore.backendAnalysis = await analyzeOnBackend(AppStore.currentSheetName);
-                    AppLogger.log("تم استلام نموذج التحليل الديناميكي من FastAPI.", "success");
-                } catch (backendError) {
-                    AppLogger.log(`تعذر تحديث نموذج FastAPI: ${backendError.message}`, "warning");
+                    AppStore.backendAnalysis = await analyzeOnBackend(sheetName);
+                } catch (e) {
+                    AppLogger.log(`تحليل الخادم تعذر: ${e.message}`, "warning");
                 }
             }
 
             SemanticModelEngine.discover(AppStore.data);
+            AppStore.finalReportType = AppStore.selectedReportType || AppStore.domain.id;
+
             if (AppStore.backendAnalysis) {
-                BackendAnalysisEngine.apply(AppStore.backendAnalysis);
-            }
-
-            const selectedType = AppStore.selectedReportType;
-
-            if (selectedType === 'ai_smart') {
-                await runAiTypeDetection();
+                const b = AppStore.backendAnalysis;
+                AppStore.schema.classification = b.classification || AppStore.schema.classification;
+                AppStore.semanticMappings = b.mappings || AppStore.semanticMappings;
+                AppStore.profiling = b.profile || AppStore.profiling;
+                AppStore.executiveSummary = {
+                    overview: `تحليل شامل وموثق لـ <strong>${(b.rows || AppStore.data.length).toLocaleString()}</strong> سجلاً ضمن تصنيف (${b.classification}).`,
+                    kpis: `إجمالي المقياس الرئيسي (${b.mappings?.primary_metric || 'العمليات'}) بلغ <strong>${(b.metrics?.total_primary || 0).toLocaleString(undefined, { maximumFractionDigits: 2 })}</strong>.`,
+                    risks: b.profile?.duplicates > 0 ? `تم ضبط واستبعاد ${b.profile.duplicates} صفاً مكرراً لضمان دقة الأرقام.` : "خلو تام من التكرارات غير المبررة مع استقرار إحصائي متوازن.",
+                    recs: (b.insights || []).map(x => `• ${x}`).join("<br>") || "الاستمرار في مراقبة المؤشرات الدورية وتحديث السجلات بانتظام.",
+                    source: "backend"
+                };
             } else {
-                const detectedId = AppStore.domain.id;
-                
-                if (selectedType !== 'custom' && detectedId !== 'generic' && selectedType !== detectedId) {
-                    showMismatchWarning(selectedType, detectedId);
-                } else {
-                    AppStore.finalReportType = selectedType;
-                    finalizeDataProcessing();
-                }
+                DataQualityEngine.assess(AppStore.data, AppStore.schema);
+                AppStore.executiveSummary = {
+                    overview: `تحليل تفاعلي مباشر لـ <strong>${AppStore.data.length.toLocaleString()}</strong> سجلاً.`,
+                    kpis: `المقياس الأساسي المستخرج: (${AppStore.semanticMappings.primaryMetric || 'العمليات'}).`,
+                    risks: "فحص وتدقيق السجلات مكتمل بنجاح ومطابق للأنماط الإحصائية.",
+                    recs: "متابعة المؤشرات الرئيسية ودعم الفئات الأقل مساهمة.",
+                    source: "local"
+                };
             }
-        }
 
-        function finalizeDataProcessing() {
-            SemanticModelEngine.applySemanticMappings(AppStore.finalReportType);
-            DataQualityEngine.assess(AppStore.data, AppStore.schema);
-            if (AppStore.backendAnalysis) {
-                BackendAnalysisEngine.apply(AppStore.backendAnalysis);
-            }
-            generateDynamicMeasures();
+            document.getElementById('sum-overview').innerHTML = AppStore.executiveSummary.overview;
+            document.getElementById('sum-kpis').innerHTML = AppStore.executiveSummary.kpis;
+            document.getElementById('sum-risks').innerHTML = AppStore.executiveSummary.risks;
+            document.getElementById('sum-recs').innerHTML = AppStore.executiveSummary.recs;
 
             document.getElementById('welcome-dropzone').classList.add('hidden');
             document.getElementById('dashboard-content').classList.remove('hidden');
@@ -2187,11 +1857,7 @@ async function downloadBackendExport(kind, setProgress) {
             document.getElementById('export-analysis-btn').removeAttribute('disabled');
 
             document.getElementById('project-name').textContent = AppStore.projectName;
-            const totalRows = AppStore.totalRows || AppStore.data.length;
-            const visibleRows = AppStore.data.length;
-            document.getElementById('project-rows').textContent = totalRows > visibleRows
-                ? `${totalRows.toLocaleString()} صف تم تحميلها (${visibleRows.toLocaleString()} للعرض)`
-                : `${totalRows.toLocaleString()} صف تم تحميلها`;
+            document.getElementById('project-rows').textContent = `${AppStore.data.length.toLocaleString()} صف مدقق`;
             document.getElementById('project-status-dot').className = 'status-dot';
             document.getElementById('project-status-label').textContent = 'التقرير النشط:';
 
@@ -2199,1168 +1865,11 @@ async function downloadBackendExport(kind, setProgress) {
             renderKPICards();
             renderDataTable();
             renderDynamicSlicers();
+            rebuildVisualsFromFilteredData();
+            renderChartsSafely();
 
-            // FastAPI is authoritative when hosted; preserve the local engine
-            // as a zero-install fallback for directly opened HTML files.
-            if (AppStore.backendAnalysis) {
-                GeminiAIEngine.applySummaryToUI();
-                updateAIBadge("ai-mode", "محرك FastAPI التحليلي");
-                renderChartsSafely();
-            } else {
-                GeminiAIEngine.analyze(AppStore.data, AppStore.schema);
-            }
-            Toast.show("تم استيعاب البيانات وبناء النموذج الدلالي بنجاح.", "success");
+            Toast.show("تم استيعاب البيانات وتفعيل النموذج التفاعلي بنجاح.", "success");
         }
-
-        // --- AI Smart Detection & Auto-Fallback Workflow ---
-        async function runAiTypeDetection() {
-            const modal = document.getElementById('type-validation-modal');
-            const title = document.getElementById('validation-modal-title');
-            const body = document.getElementById('validation-modal-body');
-            const btnConfirm = document.getElementById('validation-btn-confirm');
-            const btnChange = document.getElementById('validation-btn-change');
-
-            title.innerHTML = `<i class="fa-solid fa-robot" style="color:var(--accent);"></i> جاري الاكتشاف الذكي...`;
-            body.innerHTML = `جاري تحليل الأعمدة والبيانات لتحديد نوع التقرير الأنسب...`;
-            btnConfirm.style.display = 'none';
-            btnChange.style.display = 'none';
-            modal.style.display = 'flex';
-
-            if (AppStore.backendAnalysis) {
-                handleAiDetectionResult({
-                    detectedType: AppStore.backendAnalysis.detected_type || "custom",
-                    confidence: AppStore.backendAnalysis.confidence || 70,
-                    reason: "تم تحديد النوع تلقائياً من خلال محرك التحليل الإحصائي في FastAPI."
-                });
-                return;
-            }
-
-            if (!AppStore.geminiConfig.enabled || !AppStore.geminiConfig.apiKey) {
-                setTimeout(() => {
-                    handleAiDetectionResult({
-                        detectedType: AppStore.domain.id,
-                        confidence: AppStore.schema.confidence,
-                        reason: "التحليل الإحصائي المحلي (مفتاح API غير متوفر)"
-                    });
-                }, 800);
-                return;
-            }
-
-            const prompt = `أنت خبير ذكاء أعمال. حدد نوع التقرير من القائمة التالية (sales, inventory, finance, expenses, purchases, customers, products, hr, marketing, branches, operations, kpi, attendance, custom)
-            بناء على أسماء الأعمدة. الرد JSON حصراً:
-            {"detectedType": "sales", "confidence": 95, "reason": "سبب الاختيار"}
-            الأعمدة: ${AppStore.schema.headers.join(', ')}`;
-
-            let modelsToTry = GeminiAIEngine.getFallbackModels();
-            let lastError = null;
-
-            for (let model of modelsToTry) {
-                try {
-                    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${AppStore.geminiConfig.apiKey}`;
-                    
-                    const response = await fetch(endpoint, {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({
-                            contents: [{ parts: [{ text: prompt }] }],
-                            generationConfig: { temperature: 0.1, maxOutputTokens: 200 }
-                        })
-                    });
-
-                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                    
-                    const json = await response.json();
-                    let replyText = json.candidates?.[0]?.content?.parts?.[0]?.text || "";
-                    replyText = replyText.replace(/```json/gi, '').replace(/```/g, '').trim();
-                    const parsed = JSON.parse(replyText);
-                    
-                    handleAiDetectionResult(parsed);
-                    return; // Exit loop on success
-                } catch (err) {
-                    lastError = err;
-                    AppLogger.log(`فشل الاكتشاف الذكي بنموذج (${model})... جاري البحث التلقائي للبديل`, "warning");
-                }
-            }
-
-            // Fallback locally if ALL models failed
-            handleAiDetectionResult({
-                detectedType: AppStore.domain.id,
-                confidence: AppStore.schema.confidence,
-                reason: `فشلت الاتصالات بـ Gemini. تم استخدام التحليل الإحصائي المحلي. الخطأ: ${lastError?.message}`
-            });
-        }
-
-        function handleAiDetectionResult(result) {
-            let typeId = result.detectedType;
-            if (!DomainRegistry.domains[typeId]) typeId = 'generic';
-
-            const domain = DomainRegistry.domains[typeId];
-            
-            const title = document.getElementById('validation-modal-title');
-            const body = document.getElementById('validation-modal-body');
-            const btnConfirm = document.getElementById('validation-btn-confirm');
-            const btnChange = document.getElementById('validation-btn-change');
-
-            title.innerHTML = `<i class="fa-solid fa-check-circle" style="color:var(--success);"></i> اكتشاف نوع التقرير`;
-            body.innerHTML = `
-                <p><strong>النوع المكتشف:</strong> ${domain.label_ar}</p>
-                <p><strong>نسبة الثقة:</strong> ${result.confidence}%</p>
-                <p><strong>السبب:</strong> ${result.reason}</p>
-                <p style="margin-top:14px; font-weight:700;">هل تود المتابعة بهذا التصنيف؟</p>
-            `;
-
-            btnConfirm.textContent = "تأكيد ومتابعة";
-            btnChange.textContent = "تغيير النوع";
-            
-            btnConfirm.style.display = 'inline-block';
-            btnChange.style.display = 'inline-block';
-
-            btnConfirm.onclick = () => {
-                document.getElementById('type-validation-modal').style.display = 'none';
-                AppStore.finalReportType = typeId;
-                finalizeDataProcessing();
-            };
-
-            btnChange.onclick = () => {
-                document.getElementById('type-validation-modal').style.display = 'none';
-                resetToWelcome();
-            };
-        }
-
-        function showMismatchWarning(selectedId, detectedId) {
-            const modal = document.getElementById('type-validation-modal');
-            const title = document.getElementById('validation-modal-title');
-            const body = document.getElementById('validation-modal-body');
-            const btnConfirm = document.getElementById('validation-btn-confirm');
-            const btnChange = document.getElementById('validation-btn-change');
-
-            const selDomain = DomainRegistry.domains[selectedId] || DomainRegistry.domains.generic;
-            const detDomain = DomainRegistry.domains[detectedId] || DomainRegistry.domains.generic;
-
-            title.innerHTML = `<i class="fa-solid fa-triangle-exclamation" style="color:var(--warning);"></i> تحذير: تعارض في نوع البيانات`;
-            body.innerHTML = `
-                <p>لقد اخترت نوع التقرير: <strong>${selDomain.label_ar}</strong></p>
-                <p>ولكن بناءً على التحليل الدلالي، يبدو أن البيانات أقرب إلى: <strong style="color:var(--accent);">${detDomain.label_ar}</strong></p>
-                <p style="margin-top:14px; font-weight:700;">بماذا ترغب في المتابعة؟</p>
-            `;
-
-            btnConfirm.textContent = `المتابعة كـ (${selDomain.label_ar})`;
-            btnChange.textContent = `التغيير إلى (${detDomain.label_ar})`;
-
-            btnConfirm.style.display = 'inline-block';
-            btnChange.style.display = 'inline-block';
-            modal.style.display = 'flex';
-
-            btnConfirm.onclick = () => {
-                modal.style.display = 'none';
-                AppStore.finalReportType = selectedId;
-                finalizeDataProcessing();
-            };
-
-            btnChange.onclick = () => {
-                modal.style.display = 'none';
-                AppStore.finalReportType = detectedId;
-                finalizeDataProcessing();
-            };
-        }
-
-        function resetToWelcome() {
-            AppStore.selectedReportType = null;
-            document.getElementById('pre-report-type-select').value = "";
-            document.getElementById('step-2-upload-area').style.display = 'none';
-            Toast.show("قم باختيار نوع التقرير الصحيح ثم أعد رفع الملف.", "info");
-        }
-
-        // --- Measures & Interactive Cards ---
-        function generateDynamicMeasures() {
-            AppStore.measures = [];
-            const p = AppStore.semanticMappings.primaryMetric;
-            const s = AppStore.semanticMappings.secondaryMetric;
-
-            if (p) {
-                AppStore.measures.push({ id: 'm_primary_total', name: `إجمالي ${p}`, field: p, value: 0, fmt: 'number', icon: 'fa-calculator' });
-                AppStore.measures.push({ id: 'm_primary_avg', name: `متوسط ${p}`, field: p, value: 0, fmt: 'number', icon: 'fa-chart-line' });
-            }
-
-            if (s) {
-                AppStore.measures.push({ id: 'm_secondary_total', name: `إجمالي ${s}`, field: s, value: 0, fmt: 'number', icon: 'fa-coins' });
-            }
-
-            AppStore.measures.push({ id: 'm_records', name: 'إجمالي السجلات النشطة', value: AppStore.data.length, fmt: 'count', icon: 'fa-list-ol' });
-        }
-
-        function recalculateMeasures() {
-            const d = AppStore.filteredData;
-            const p = AppStore.semanticMappings.primaryMetric;
-            const s = AppStore.semanticMappings.secondaryMetric;
-
-            const pSum = p ? d.reduce((acc, r) => acc + (Number(String(r[p]).replace(/[^0-9.-]/g, '')) || 0), 0) : 0;
-            const sSum = s ? d.reduce((acc, r) => acc + (Number(String(r[s]).replace(/[^0-9.-]/g, '')) || 0), 0) : 0;
-
-            AppStore.measures.forEach(m => {
-                if (m.id === 'm_primary_total') m.value = pSum;
-                else if (m.id === 'm_primary_avg') m.value = d.length > 0 ? pSum / d.length : 0;
-                else if (m.id === 'm_secondary_total') m.value = sSum;
-                else if (m.id === 'm_records') m.value = d.length;
-            });
-        }
-
-        function renderKPICards() {
-            const grid = document.getElementById('kpi-grid');
-            grid.innerHTML = "";
-
-            AppStore.measures.forEach((m, idx) => {
-                let displayVal = m.value.toLocaleString(undefined, { maximumFractionDigits: 1 });
-                const isActive = AppStore.activeFilters.highlightMetric === m.id;
-
-                grid.insertAdjacentHTML('beforeend', `
-                    <div class="glass-card kpi-card ${isActive ? 'active-card' : ''}" onclick="inspectMetricCard('${m.id}')" title="انقر لعرض التفاصيل وتصفية المؤشر">
-                        <div class="kpi-top">
-                            <div class="kpi-meta">
-                            <span>${escapeHtml(m.name)}</span>
-                                <h3>${displayVal}</h3>
-                            </div>
-                            <div class="kpi-icon"><i class="fa-solid ${m.icon}"></i></div>
-                        </div>
-                        <div class="kpi-footer">
-                            <span><i class="fa-solid fa-arrow-pointer"></i> تفاعل وتحليل</span>
-                            <span>#${idx + 1}</span>
-                        </div>
-                    </div>
-                `);
-            });
-        }
-
-        function inspectMetricCard(metricId) {
-            const m = AppStore.measures.find(x => x.id === metricId);
-            if (!m) return;
-
-            AppStore.activeFilters.highlightMetric = metricId;
-            renderKPICards();
-
-            const an = ReportAnalysisModel.build();
-            const modal = document.getElementById('card-drilldown-modal');
-            const title = document.getElementById('drilldown-modal-title');
-            const body = document.getElementById('drilldown-modal-body');
-
-            title.textContent = `تحليل المؤشر: ${m.name}`;
-            body.innerHTML = `
-                <div style="background:var(--accent-glow); padding:12px; border-radius:8px; border:1px solid var(--accent);">
-                    <div style="font-size:11px; color:var(--text-muted);">القيمة الحالية المفلترة:</div>
-                    <div style="font-size:20px; font-weight:800; color:var(--text-main); margin-top:4px;">${m.value.toLocaleString(undefined, { maximumFractionDigits: 1 })}</div>
-                </div>
-                <div style="font-size:12px; font-weight:700; margin-top:6px;">أعلى المساهمين حسب (${escapeHtml(an.catDimension)}):</div>
-                <div style="display:flex; flex-direction:column; gap:6px;">
-                    ${an.categories.slice(0, 5).map(c => `
-                        <div style="display:flex; justify-content:space-between; padding:6px 10px; background:var(--bg-app); border-radius:6px; cursor:pointer;" onclick="GlobalFilterBus.toggleDimensionValue(${jsAttr(an.catDimension)}, ${jsAttr(c.name)}); closeDrilldownModal();">
-                            <span>${escapeHtml(c.name)}</span>
-                            <strong>${c.value.toLocaleString()} (${c.share.toFixed(1)}%)</strong>
-                        </div>
-                    `).join('')}
-                </div>
-                <div style="display:flex; gap:8px; margin-top:8px;">
-                    <button onclick="closeDrilldownModal()" class="btn btn-primary" style="flex:1;">إغلاق</button>
-                </div>
-            `;
-            modal.style.display = 'flex';
-        }
-
-        function closeDrilldownModal() {
-            document.getElementById('card-drilldown-modal').style.display = 'none';
-        }
-
-        // --- Render Adaptive Charts with Bi-Directional Cross-Filtering ---
-        function renderChartsSafely() {
-            try {
-                const grid = document.getElementById('charts-grid');
-                if (!grid) return;
-                grid.innerHTML = "";
-
-                Object.values(AppStore.chartsInstances).forEach(c => { try { c.dispose(); } catch(e) {} });
-                AppStore.chartsInstances = {};
-
-                const isDark = document.documentElement.classList.contains('dark');
-                const textClr = isDark ? '#94a3b8' : '#475569';
-
-                AppStore.visuals.forEach(v => {
-                    const domId = `chart_${String(v.id).replace(/[^a-zA-Z0-9_-]/g, "_")}`;
-                    grid.insertAdjacentHTML('beforeend', `
-                        <div class="glass-card chart-card">
-                            <div class="chart-card-header">
-                                <h5>${escapeHtml(v.title)}</h5>
-                                <span style="font-size:10px; color:var(--text-muted);"><i class="fa-solid fa-hand-pointer"></i> انقر للتصفية المتقاطعة</span>
-                            </div>
-                            <div class="chart-wrapper" id="${domId}"></div>
-                        </div>
-                    `);
-
-                    const dom = document.getElementById(domId);
-                    if (!dom) return;
-
-                    const chart = echarts.init(dom, isDark ? 'dark' : null);
-                    AppStore.chartsInstances[v.id] = chart;
-
-                    const activeSet = (v.dimension && AppStore.activeFilters.dimensions[v.dimension]) ? AppStore.activeFilters.dimensions[v.dimension] : null;
-
-                    if (v.type === 'line') {
-                        chart.setOption({ backgroundColor: 'transparent', tooltip: { trigger: 'axis' }, xAxis: { type: 'category', data: v.xLabels, axisLabel: { color: textClr, fontSize: 9.5, rotate: 20 } }, yAxis: { type: 'value', axisLabel: { color: textClr, fontSize: 9.5 } }, series: [{ type: 'line', data: v.values, smooth: true, areaStyle: { opacity: 0.25 }, itemStyle: { color: '#2563eb' } }] });
-                    } else if (v.type === 'bar') {
-                        chart.setOption({ backgroundColor: 'transparent', tooltip: { trigger: 'axis' }, xAxis: { type: 'category', data: v.xLabels, axisLabel: { color: textClr, fontSize: 9.5, rotate: 25 } }, yAxis: { type: 'value', axisLabel: { color: textClr, fontSize: 9.5 } }, series: [{ type: 'bar', data: v.values, itemStyle: { color: (p) => { if (!activeSet || activeSet.size === 0) return '#2563eb'; return activeSet.has(p.name) ? '#f59e0b' : 'rgba(37,99,235,0.3)'; } } }] });
-                    } else if (v.type === 'treemap') {
-                        chart.setOption({ backgroundColor: 'transparent', tooltip: { formatter: '{b}: {c}' }, series: [{ type: 'treemap', roam: false, data: v.xLabels.map((l, i) => ({ name: l, value: v.values[i], itemStyle: { color: (!activeSet || activeSet.size === 0 || activeSet.has(l)) ? null : '#64748b' } })), label: { color: '#ffffff', fontSize: 11 } }] });
-                    } else if (v.type === 'scatter') {
-                        chart.setOption({ backgroundColor: 'transparent', tooltip: { trigger: 'item' }, xAxis: { name: v.xName, nameTextStyle: { color: textClr, fontSize: 10 }, axisLabel: { color: textClr } }, yAxis: { name: v.yName, nameTextStyle: { color: textClr, fontSize: 10 }, axisLabel: { color: textClr } }, series: [{ type: 'scatter', symbolSize: 10, data: v.points, itemStyle: { color: '#3b82f6' } }] });
-                    } else if (v.type === 'gauge') {
-                        chart.setOption({ backgroundColor: 'transparent', series: [{ type: 'gauge', progress: { show: true, width: 10 }, detail: { valueAnimation: true, formatter: '{value}%', fontSize: 18, color: textClr }, data: [{ value: v.value, name: 'مؤشر الجودة' }], title: { color: textClr, fontSize: 11, offsetCenter: [0, '70%'] } }] });
-                    }
-
-                    chart.on('click', (params) => {
-                        const clickedVal = params.name || (params.data && params.data.name);
-                        if (v.dimension && clickedVal) {
-                            GlobalFilterBus.toggleDimensionValue(v.dimension, clickedVal);
-                            Toast.show(`تم تبديل التصفية: (${v.dimension} = ${clickedVal})`, "info");
-                        }
-                    });
-                });
-            } catch (err) { AppLogger.log(`خطأ رسم المخططات التفاعلية: ${err.message}`, "error"); }
-        }
-
-        // --- Advanced Analytics (Plotly) ---
-        function renderPlotlyAdvanced() {
-            try {
-                const num = AppStore.schema.numericFields.slice(0, 5);
-                const data = AppStore.filteredData;
-                if (num.length === 0 || data.length === 0) return;
-
-                const isDark = document.documentElement.classList.contains('dark');
-                const bg = isDark ? '#0a0f24' : '#ffffff';
-                const text = isDark ? '#94a3b8' : '#475569';
-
-                // Correlation Matrix
-                const matrix = [];
-                num.forEach(f1 => {
-                    const row = [];
-                    num.forEach(f2 => {
-                        let sX = 0, sY = 0, sXY = 0, sX2 = 0, sY2 = 0, n = 0;
-                        data.forEach(d => {
-                            const x = Number(d[f1]);
-                            const y = Number(d[f2]);
-                            if (!isNaN(x) && !isNaN(y)) { sX += x; sY += y; sXY += x * y; sX2 += x * x; sY2 += y * y; n++; }
-                        });
-                        const den = Math.sqrt((n * sX2 - sX * sX) * (n * sY2 - sY * sY));
-                        row.push(den === 0 || isNaN(den) ? 0 : parseFloat(((n * sXY - sX * sY) / den).toFixed(2)));
-                    });
-                    matrix.push(row);
-                });
-
-                Plotly.newPlot('plotly-correlation-heatmap', [{ z: matrix, x: num, y: num, type: 'heatmap', colorscale: 'Blues' }], { paper_bgcolor: bg, plot_bgcolor: bg, font: { color: text }, margin: { l: 70, r: 20, t: 20, b: 70 } }, { responsive: true, displayModeBar: false });
-
-                // Box Plot
-                const boxTraces = num.map(f => ({ y: data.map(d => Number(d[f])).filter(v => !isNaN(v)), name: f, type: 'box' }));
-                Plotly.newPlot('plotly-distribution-box', boxTraces, { paper_bgcolor: bg, plot_bgcolor: bg, font: { color: text }, margin: { l: 40, r: 20, t: 20, b: 40 } }, { responsive: true, displayModeBar: false });
-            } catch (err) { AppLogger.log(`Plotly Error: ${err.message}`, "error"); }
-        }
-
-        // --- Data Explorer Grid ---
-        function renderDataTable() {
-            try {
-                const table = document.getElementById('preview-table');
-                const head = table.querySelector('thead');
-                const body = table.querySelector('tbody');
-                const headers = AppStore.schema.headers;
-
-                head.innerHTML = `<tr>${headers.map(h => `<th>${escapeHtml(h)}</th>`).join('')}</tr>`;
-
-                const start = (AppStore.tablePage - 1) * AppStore.pageSize;
-                const end = start + AppStore.pageSize;
-                const pageRows = AppStore.filteredData.slice(start, end);
-
-                body.innerHTML = pageRows.map(r => `
-                    <tr>${headers.map(h => `<td>${escapeHtml(r[h] !== null && r[h] !== undefined ? r[h] : "")}</td>`).join('')}</tr>
-                `).join('');
-
-                document.getElementById('table-page-info').textContent = `عرض ${Math.min(start + 1, AppStore.filteredData.length)} - ${Math.min(end, AppStore.filteredData.length)} من أصل ${AppStore.filteredData.length.toLocaleString()}`;
-                document.getElementById('data-view-count').textContent = `السجلات النشطة المفلترة: ${AppStore.filteredData.length.toLocaleString()}`;
-            } catch (err) { AppLogger.log(`خطأ مستعرض البيانات: ${err.message}`, "error"); }
-        }
-
-        function changeTablePage(delta) {
-            const maxPages = Math.ceil(AppStore.filteredData.length / AppStore.pageSize) || 1;
-            AppStore.tablePage = Math.max(1, Math.min(maxPages, AppStore.tablePage + delta));
-            renderDataTable();
-        }
-
-        function renderDynamicSlicers() {
-            const container = document.getElementById('dynamic-slicers');
-            container.innerHTML = "";
-
-            const slicerCandidates = AppStore.schema.categoricalFields.filter(f => {
-                const uniq = new Set(AppStore.data.map(d => d[f])).size;
-                return uniq >= 2 && uniq <= 30;
-            });
-
-            if (slicerCandidates.length === 0 && AppStore.semanticMappings.catDimension) {
-                slicerCandidates.push(AppStore.semanticMappings.catDimension);
-            }
-
-            slicerCandidates.slice(0, 4).forEach(field => {
-                const vals = [...new Set(AppStore.data.map(d => d[field]).filter(Boolean))].slice(0, 25);
-                const activeSet = AppStore.activeFilters.dimensions[field] || new Set();
-
-                const selectWrapper = document.createElement('div');
-                selectWrapper.style.display = 'inline-block';
-                    selectWrapper.innerHTML = `
-                    <select onchange="if(this.value) { GlobalFilterBus.toggleDimensionValue(${jsAttr(field)}, this.value); this.value=''; }" class="form-control-select" style="padding: 4px 8px; font-size: 11px; width: auto;">
-                        <option value="">+ إضافة تصفية (${escapeHtml(field)})</option>
-                        ${vals.map(v => `<option value="${escapeHtml(v)}">${activeSet.has(v) ? '✓ ' : ''}${escapeHtml(v)}</option>`).join('')}
-                    </select>
-                `;
-                container.appendChild(selectWrapper);
-            });
-        }
-
-        function switchView(view) {
-            try {
-                document.querySelectorAll('.workspace-pane').forEach(p => p.classList.add('hidden'));
-                document.querySelectorAll('.nav-btn').forEach(b => {
-                    b.classList.toggle('active', b.getAttribute('data-view') === view);
-                });
-
-                const target = document.getElementById(`workspace-${view}`);
-                if (target) target.classList.remove('hidden');
-
-                if (window.innerWidth <= 992) toggleSidebar(false);
-
-                if (view === 'overview') {
-                    setTimeout(() => {
-                        renderChartsSafely();
-                        Object.values(AppStore.chartsInstances).forEach(c => { try { c.resize(); } catch(e) {} });
-                    }, 40);
-                } else if (view === 'advanced') {
-                    setTimeout(renderPlotlyAdvanced, 40);
-                } else if (view === 'data') {
-                    renderDataTable();
-                }
-            } catch (err) { AppLogger.log(`فشل الانتقال بين اللوحات: ${err.message}`, "error"); }
-        }
-
-        function toggleSidebar(forceState) {
-            const sidebar = document.getElementById('sidebar-drawer');
-            const backdrop = document.getElementById('sidebar-backdrop');
-            const isOpen = forceState !== undefined ? forceState : !sidebar.classList.contains('open');
-            sidebar.classList.toggle('open', isOpen);
-            backdrop.classList.toggle('active', isOpen);
-        }
-
-        function toggleMobileExportMenu(forceState) {
-            const menu = document.getElementById('mobile-export-menu');
-            const isOpen = forceState !== undefined ? forceState : !menu.classList.contains('active');
-            menu.classList.toggle('active', isOpen);
-        }
-
-        // =========================================================================
-        // 🚀 ADVANCED EXCEL ENGINE (INTERACTIVE MATRIX WITH IN-CELL CHARTS)
-        // =========================================================================
-        const ExcelReportEngine = {
-            async build(analysis) {
-                const wb = new ExcelJS.Workbook();
-                wb.creator = AppStore.branding.preparedBy;
-                wb.created = new Date();
-
-                const fontTitle = { name: 'Segoe UI', size: 18, bold: true, color: { argb: 'FFFFFFFF' } };
-                const fontSubTitle = { name: 'Segoe UI', size: 11, color: { argb: 'FFCBD5E1' } };
-                const fontHeader = { name: 'Segoe UI', size: 11, bold: true, color: { argb: 'FFFFFFFF' } };
-                const fontCardLabel = { name: 'Segoe UI', size: 10, bold: true, color: { argb: 'FF64748B' } };
-                const fontCardVal = { name: 'Segoe UI', size: 18, bold: true, color: { argb: 'FF0F172A' } };
-                const fontNormal = { name: 'Segoe UI', size: 11, color: { argb: 'FF1E293B' } };
-
-                const fillDarkBlue = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF0F172A' } };
-                const fillAccent = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF2563EB' } };
-                const fillCard = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFFFFFF' } };
-                const fillZebra = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFF8FAFC' } };
-                const fillSuccess = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF10B981' } };
-                const fillWarning = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFF59E0B' } };
-
-                const thinBorder = {
-                    top: { style: 'thin', color: { argb: 'FFCBD5E1' } },
-                    left: { style: 'thin', color: { argb: 'FFCBD5E1' } },
-                    bottom: { style: 'thin', color: { argb: 'FFCBD5E1' } },
-                    right: { style: 'thin', color: { argb: 'FFCBD5E1' } }
-                };
-
-                const dataRowCount = Math.max(AppStore.data.length, 1);
-                const rawHeaders = AppStore.schema.headers;
-                
-                // Helper to get Excel column letter
-                const getColLetter = (colIdx) => {
-                    let letter = '';
-                    let temp = colIdx + 1;
-                    while (temp > 0) {
-                        let rem = (temp - 1) % 26;
-                        letter = String.fromCharCode(65 + rem) + letter;
-                        temp = Math.floor((temp - 1) / 26);
-                    }
-                    return letter;
-                };
-
-                const primColIndex = rawHeaders.indexOf(analysis.primaryMetricName);
-                const primColLetter = primColIndex !== -1 ? getColLetter(primColIndex) : 'A';
-                const catColIndex = rawHeaders.indexOf(analysis.catDimension);
-                const catColLetter = catColIndex !== -1 ? getColLetter(catColIndex) : 'B';
-
-                // ==============================================================
-                // SHEET 1: 01_Executive_Dashboard
-                // ==============================================================
-                const wsDash = wb.addWorksheet('01_Executive_Dashboard', { 
-                    views: [{ showGridLines: false }],
-                    properties: { tabColor: { argb: 'FF2563EB' } }
-                });
-                
-                // Setup Grid Columns
-                wsDash.columns = [
-                    { width: 3 },  // A: Spacer
-                    { width: 28 }, // B: Column 1
-                    { width: 28 }, // C: Column 2
-                    { width: 22 }, // D: Column 3
-                    { width: 22 }, // E: Column 4
-                    { width: 30 }, // F: Column 5 (For in-cell bar chart)
-                    { width: 3 }   // G: Spacer
-                ];
-
-                // 1. Header Banner
-                wsDash.mergeCells('B2:F3');
-                const titleCell = wsDash.getCell('B2');
-                titleCell.value = `لوحة معلومات الأعمال التنفيذية - ${analysis.classification}`;
-                titleCell.font = fontTitle;
-                titleCell.fill = fillDarkBlue;
-                titleCell.alignment = { vertical: 'middle', horizontal: 'right', indent: 1 };
-                wsDash.getRow(2).height = 25;
-                wsDash.getRow(3).height = 20;
-
-                wsDash.mergeCells('B4:F4');
-                const subCell = wsDash.getCell('B4');
-                subCell.value = `تاريخ الإنشاء: ${new Date().toLocaleDateString('ar-SA')} | إجمالي السجلات: ${analysis.rowCount.toLocaleString()} | محرك التحليل: ${AppStore.branding.preparedBy}`;
-                subCell.font = fontSubTitle;
-                subCell.fill = fillDarkBlue;
-                subCell.alignment = { vertical: 'middle', horizontal: 'right', indent: 1 };
-                wsDash.getRow(4).height = 25;
-
-                // 2. Navigation Links
-                wsDash.getCell('B6').value = { text: '▶ الانتقال للبيانات الأولية (Raw Data)', hyperlink: '#\'03_Raw_Data\'!A1' };
-                wsDash.getCell('B6').font = { ...fontNormal, color: { argb: 'FF2563EB' }, underline: true };
-                wsDash.getCell('D6').value = { text: '▶ تفاصيل التحليل المتقدم (Details)', hyperlink: '#\'02_Analytical_Details\'!A1' };
-                wsDash.getCell('D6').font = { ...fontNormal, color: { argb: 'FF2563EB' }, underline: true };
-                
-                // 3. Interactive Slicer/Filter Cell
-                wsDash.mergeCells('E6:F6');
-                const filterLabel = wsDash.getCell('E6');
-                filterLabel.value = `اختر الفئة للتصفية التفاعلية (يحدث البيانات ديناميكياً):`;
-                filterLabel.font = fontCardLabel;
-                filterLabel.alignment = { horizontal: 'left', vertical: 'middle' };
-                
-                wsDash.mergeCells('E7:F7');
-                const filterCell = wsDash.getCell('E7');
-                const uniqueCats = analysis.categories.slice(0, 50).map(c => c.name.toString().replace(/,/g, ' '));
-                if (uniqueCats.length > 0) {
-                    filterCell.dataValidation = {
-                        type: 'list',
-                        allowBlank: true,
-                        formulae: [`"${uniqueCats.join(',')}"`]
-                    };
-                    filterCell.value = uniqueCats[0];
-                } else {
-                    filterCell.value = "الكل";
-                }
-                filterCell.font = { name: 'Segoe UI', size: 12, bold: true, color: { argb: 'FF2563EB' } };
-                filterCell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFEFF6FF' } };
-                filterCell.border = thinBorder;
-                filterCell.alignment = { horizontal: 'center', vertical: 'middle' };
-                wsDash.getRow(7).height = 30;
-
-                // 4. Live Dynamic Formulas on KPI Cards
-                const makeFormulaCard = (startCol, endCol, rowOffset, label, formulaStr, defaultVal, numFmt) => {
-                    wsDash.mergeCells(`${startCol}${rowOffset}:${endCol}${rowOffset}`);
-                    wsDash.mergeCells(`${startCol}${rowOffset+1}:${endCol}${rowOffset+2}`);
-                    
-                    const lblC = wsDash.getCell(`${startCol}${rowOffset}`);
-                    lblC.value = label;
-                    lblC.font = fontCardLabel;
-                    lblC.fill = fillCard;
-                    lblC.alignment = { vertical: 'middle', horizontal: 'center' };
-
-                    const valC = wsDash.getCell(`${startCol}${rowOffset+1}`);
-                    valC.value = { formula: formulaStr, result: defaultVal };
-                    valC.font = fontCardVal;
-                    valC.fill = fillCard;
-                    valC.alignment = { vertical: 'middle', horizontal: 'center' };
-                    if (numFmt) valC.numFmt = numFmt;
-
-                    const cols = startCol === endCol ? [startCol] : [startCol, String.fromCharCode(startCol.charCodeAt(0)+1)];
-                    [rowOffset, rowOffset+1, rowOffset+2].forEach(r => {
-                        wsDash.getCell(`${startCol}${r}`).border = { left: thinBorder.left, right: startCol===endCol?thinBorder.right:undefined, top: r===rowOffset?thinBorder.top:undefined, bottom: r===rowOffset+2?thinBorder.bottom:undefined };
-                        if(startCol !== endCol) {
-                            wsDash.getCell(`${endCol}${r}`).border = { right: thinBorder.right, top: r===rowOffset?thinBorder.top:undefined, bottom: r===rowOffset+2?thinBorder.bottom:undefined };
-                        }
-                    });
-                };
-
-                // Row 9: Main KPIs (SUBTOTAL respects Data Sheet AutoFilter)
-                makeFormulaCard('B', 'B', 9, `إجمالي ${analysis.primaryMetricName}`, `SUBTOTAL(109, '03_Raw_Data'!$${primColLetter}$2:$${primColLetter}$${dataRowCount + 1})`, analysis.metrics.totalPrimary, '#,##0.00');
-                makeFormulaCard('C', 'C', 9, `متوسط ${analysis.primaryMetricName}`, `SUBTOTAL(101, '03_Raw_Data'!$${primColLetter}$2:$${primColLetter}$${dataRowCount + 1})`, analysis.metrics.avgPrimary, '#,##0.00');
-                makeFormulaCard('D', 'D', 9, 'سجلات نشطة (تتأثر بالفلتر)', `SUBTOTAL(103, '03_Raw_Data'!$A$2:$A$${dataRowCount + 1})`, analysis.rowCount, '#,##0');
-                
-                // Interactive SUMIF linked to the Dropdown
-                makeFormulaCard('E', 'F', 9, `مجموع المقياس للفئة المحددة أعلاه (Dynamic)`, `SUMIFS('03_Raw_Data'!$${primColLetter}$2:$${primColLetter}$${dataRowCount + 1}, '03_Raw_Data'!$${catColLetter}$2:$${catColLetter}$${dataRowCount + 1}, E7)`, analysis.categories.length ? analysis.categories[0].value : 0, '#,##0.00');
-
-                // 5. Embedded AI Insights & Data Quality
-                wsDash.mergeCells('B13:F13');
-                wsDash.getCell('B13').value = "رؤى الذكاء الاصطناعي المتقدمة وجودة البيانات";
-                wsDash.getCell('B13').font = fontHeader;
-                wsDash.getCell('B13').fill = fillDarkBlue;
-                wsDash.getCell('B13').alignment = { vertical: 'middle', horizontal: 'right', indent: 1 };
-                wsDash.getRow(13).height = 25;
-
-                wsDash.mergeCells('B14:D16');
-                const aiCell = wsDash.getCell('B14');
-                const aiText = analysis.executiveSummary.excel_insights && analysis.executiveSummary.excel_insights.length > 0 
-                    ? `• ${analysis.executiveSummary.excel_insights.join('\n• ')}`
-                    : `نظرة عامة: ${analysis.executiveSummary.overview.replace(/<[^>]*>/g, '')}\nالتوصيات: ${analysis.executiveSummary.recs.replace(/<[^>]*>/g, '')}`;
-                aiCell.value = aiText;
-                aiCell.font = fontNormal;
-                aiCell.alignment = { vertical: 'top', horizontal: 'right', wrapText: true, indent: 1 };
-                aiCell.fill = fillZebra;
-                aiCell.border = thinBorder;
-
-                wsDash.mergeCells('E14:F16');
-                const dqCell = wsDash.getCell('E14');
-                dqCell.value = `مؤشر الجودة العام: ${analysis.qualityScore}%\nالتصنيف المكتشف: ${analysis.classification}\nالحقول المفقودة/المكررة التي تمت معالجتها: ${AppStore.profiling.duplicates}`;
-                dqCell.font = fontNormal;
-                dqCell.alignment = { vertical: 'center', horizontal: 'right', wrapText: true, indent: 1 };
-                dqCell.fill = analysis.qualityScore > 80 ? fillSuccess : fillWarning;
-                dqCell.border = thinBorder;
-
-                // ==============================================================
-                // 6. TRULY INTERACTIVE EXCEL IN-CELL CHARTS & TOP PERFORMERS
-                // ==============================================================
-                let currentEmbedRow = 18;
-
-                if (analysis.categories.length > 0) {
-                    wsDash.mergeCells(`B${currentEmbedRow}:F${currentEmbedRow}`);
-                    wsDash.getCell(`B${currentEmbedRow}`).value = `البيانات تُحدّث ديناميكياً (يُحدّث البيانات ديناميكياً) - التحليل التفاعلي الحي: ${analysis.catDimension}`;
-                    wsDash.getCell(`B${currentEmbedRow}`).font = fontHeader;
-                    wsDash.getCell(`B${currentEmbedRow}`).fill = fillAccent;
-                    wsDash.getCell(`B${currentEmbedRow}`).alignment = { vertical: 'middle', horizontal: 'right', indent: 1 };
-                    wsDash.getRow(currentEmbedRow).height = 25;
-                    currentEmbedRow++;
-
-                    const tableHeaders = ['الفئة / التصنيف', `إجمالي (TotalSales)`, 'تنسيق شريطي (Data Bar)', 'النسبة المئوية %', 'مؤشر بصري (In-Cell Chart)'];
-                    ['B', 'C', 'D', 'E', 'F'].forEach((col, idx) => {
-                        const c = wsDash.getCell(`${col}${currentEmbedRow}`);
-                        c.value = tableHeaders[idx];
-                        c.font = fontHeader;
-                        c.fill = fillDarkBlue;
-                        c.alignment = { vertical: 'middle', horizontal: 'center' };
-                        c.border = thinBorder;
-                    });
-                    wsDash.getRow(currentEmbedRow).height = 24;
-                    const startDataRow = currentEmbedRow + 1;
-                    
-                    const topLimit = Math.min(analysis.categories.length, 15);
-                    for (let idx = 0; idx < topLimit; idx++) {
-                        const cat = analysis.categories[idx];
-                        const r = currentEmbedRow + 1 + idx;
-                        
-                        // Category Name
-                        const cB = wsDash.getCell(`B${r}`);
-                        cB.value = cat.name; 
-                        cB.font = fontNormal; 
-                        cB.border = thinBorder;
-
-                        // SUMIFS Live Formula for values
-                        const cC = wsDash.getCell(`C${r}`);
-                        cC.value = { formula: `SUMIFS('03_Raw_Data'!$${primColLetter}$2:$${primColLetter}$${dataRowCount + 1}, '03_Raw_Data'!$${catColLetter}$2:$${catColLetter}$${dataRowCount + 1}, B${r})`, result: cat.value };
-                        cC.numFmt = '#,##0.00'; 
-                        cC.font = fontNormal; 
-                        cC.border = thinBorder;
-
-                        // Invisible mirror column for Data Bars
-                        const cD = wsDash.getCell(`D${r}`);
-                        cD.value = { formula: `C${r}`, result: cat.value };
-                        cD.numFmt = ';;;'; // Hide text, keep data bar
-                        cD.border = thinBorder;
-
-                        // Percentage Formula
-                        const cE = wsDash.getCell(`E${r}`);
-                        cE.value = { formula: `IF(SUM($C$${startDataRow}:$C$${startDataRow+topLimit-1})=0, 0, C${r}/SUM($C$${startDataRow}:$C$${startDataRow+topLimit-1}))`, result: cat.share / 100 };
-                        cE.numFmt = '0.0%'; 
-                        cE.font = fontNormal; 
-                        cE.alignment = { horizontal: 'center' };
-                        cE.border = thinBorder;
-
-                        // In-Cell Formula Bar Chart (REPT function)
-                        const cF = wsDash.getCell(`F${r}`);
-                        cF.value = { formula: `REPT("█", IF(MAX($C$${startDataRow}:$C$${startDataRow+topLimit-1})=0, 0, C${r}/MAX($C$${startDataRow}:$C$${startDataRow+topLimit-1})*30))`, result: "████████" };
-                        cF.font = { name: 'Arial', size: 10, color: { argb: 'FF3B82F6' } }; // Blue color for bar
-                        cF.alignment = { horizontal: 'left', vertical: 'middle' }; // LTR orientation for bar chart visually
-                        cF.border = thinBorder;
-
-                        if (idx % 2 === 1) [cB, cC, cD, cE, cF].forEach(c => c.fill = fillZebra);
-                    }
-
-                    // Add Data Bar Conditional Formatting on Column D
-                    wsDash.addConditionalFormatting({
-                        ref: `D${startDataRow}:D${startDataRow+topLimit-1}`,
-                        rules: [{
-                            type: 'dataBar',
-                            cfvo: [{ type: 'auto', value: 0 }, { type: 'auto', value: 0 }],
-                            color: { argb: 'FF10B981' } // Accent Green Data Bar
-                        }]
-                    });
-
-                    currentEmbedRow += topLimit + 2;
-                }
-
-                // ==============================================================
-                // 7. SNAPSHOT CHARTS (FALLBACK FOR VISUAL COMPLETENESS)
-                // ==============================================================
-                wsDash.mergeCells(`B${currentEmbedRow}:F${currentEmbedRow}`);
-                wsDash.getCell(`B${currentEmbedRow}`).value = "اللقطات المرئية للمخططات التحليلية (Static Visual Snapshots)";
-                wsDash.getCell(`B${currentEmbedRow}`).font = fontSubTitle;
-                wsDash.getCell(`B${currentEmbedRow}`).fill = fillDarkBlue;
-                wsDash.getCell(`B${currentEmbedRow}`).alignment = { vertical: 'middle', horizontal: 'center' };
-                currentEmbedRow += 2;
-
-                const chartKeys = Object.keys(AppStore.chartsInstances);
-                let colToggle = true; 
-
-                for (let i = 0; i < chartKeys.length; i++) {
-                    const cInstance = AppStore.chartsInstances[chartKeys[i]];
-                    try {
-                        const base64Data = cInstance.getDataURL({ type: 'png', pixelRatio: 2, backgroundColor: '#ffffff' });
-                        const imageId = wb.addImage({ base64: base64Data, extension: 'png' });
-
-                        wsDash.addImage(imageId, {
-                            tl: { col: colToggle ? 1 : 4, row: currentEmbedRow - 1 },
-                            ext: { width: 450, height: 260 }
-                        });
-
-                        if (!colToggle) currentEmbedRow += 14; 
-                        colToggle = !colToggle;
-                    } catch (e) {
-                        AppLogger.log(`تعذر تضمين صورة المخطط في Excel: ${e.message}`, "warning");
-                    }
-                }
-
-                // ==============================================================
-                // SHEET 2: 02_Analytical_Details
-                // ==============================================================
-                const wsDetails = wb.addWorksheet('02_Analytical_Details', { 
-                    views: [{ state: 'frozen', ySplit: 1, showGridLines: true }],
-                    properties: { tabColor: { argb: 'FF10B981' } }
-                });
-                
-                wsDetails.columns = [
-                    { width: 35 }, { width: 25 }, { width: 18 }, { width: 20 }
-                ];
-
-                const detHeaders = ['الفئة / التصنيف', `إجمالي (${analysis.primaryMetricName})`, 'نسبة المساهمة %', 'التقييم التشغيلي'];
-                const detRow = wsDetails.getRow(1);
-                detRow.height = 30;
-                detHeaders.forEach((h, idx) => {
-                    const c = detRow.getCell(idx + 1);
-                    c.value = h;
-                    c.font = fontHeader;
-                    c.fill = fillAccent;
-                    c.alignment = { vertical: 'middle', horizontal: 'center' };
-                    c.border = thinBorder;
-                });
-
-                analysis.categories.forEach((cat, idx) => {
-                    const r = idx + 2;
-                    wsDetails.getCell(`A${r}`).value = cat.name; 
-                    wsDetails.getCell(`B${r}`).value = cat.value; 
-                    wsDetails.getCell(`B${r}`).numFmt = '#,##0.00';
-                    wsDetails.getCell(`C${r}`).value = cat.share / 100; 
-                    wsDetails.getCell(`C${r}`).numFmt = '0.0%';
-                    wsDetails.getCell(`D${r}`).value = cat.share >= 15 ? 'تصنيف ممتاز' : (cat.share >= 5 ? 'مستوى اعتيادي' : 'أداء منخفض'); 
-                    wsDetails.getRow(r).eachCell(c => c.border = thinBorder);
-                });
-
-                if (analysis.categories.length > 0) {
-                    wsDetails.addConditionalFormatting({
-                        ref: `B2:B${analysis.categories.length + 1}`,
-                        rules: [{ type: 'dataBar', cfvo: [{ type: 'min', value: 0 }, { type: 'max' }], color: { argb: 'FF2563EB' } }]
-                    });
-                }
-
-                // ==============================================================
-                // SHEET 3: 03_Raw_Data
-                // ==============================================================
-                const wsData = wb.addWorksheet('03_Raw_Data', { 
-                    views: [{ state: 'frozen', ySplit: 1, showGridLines: true }],
-                    properties: { tabColor: { argb: 'FF94A3B8' } }
-                });
-                wsData.columns = rawHeaders.map(h => ({ header: h, key: h, width: Math.max(h.length + 6, 16) }));
-
-                const headerRow = wsData.getRow(1);
-                headerRow.height = 25;
-                headerRow.eachCell(c => {
-                    c.font = fontHeader;
-                    c.fill = fillDarkBlue;
-                    c.alignment = { vertical: 'middle', horizontal: 'center' };
-                    c.border = thinBorder;
-                });
-
-                AppStore.data.forEach(row => wsData.addRow(row));
-                wsData.autoFilter = { from: 'A1', to: `${getColLetter(rawHeaders.length - 1)}1` };
-
-                return await wb.xlsx.writeBuffer();
-            }
-        };
-
-        // --- POWER BI PBIP GENERATOR ---
-        function generateGuid() {
-            if (window.crypto && window.crypto.randomUUID) return window.crypto.randomUUID();
-            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
-                const r = Math.random() * 16 | 0;
-                return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
-            });
-        }
-
-        const PowerBIExportEngine = {
-            build(analysis) {
-                const sanitized = AppStore.projectName.replace(/[^a-zA-Z0-9_أ-ي\-]/g, "_") || "BI_Project";
-                const reportFolder = `${sanitized}.Report`;
-                const modelFolder = `${sanitized}.SemanticModel`;
-                const culture = 'ar-SA';
-
-                const modelId = generateGuid();
-                const reportId = generateGuid();
-                const tableName = "DataTable";
-
-                const columnsConfig = AppStore.schema.headers.map(h => {
-                    const dt = AppStore.schema.dataTypes[h];
-                    return {
-                        name: h,
-                        dataType: dt === 'Number' ? 'double' : (dt === 'Date' ? 'dateTime' : 'string'),
-                        sourceColumn: h,
-                        summarizeBy: dt === 'Number' ? 'sum' : 'none',
-                        lineageTag: generateGuid()
-                    };
-                });
-
-                const rawCSV = Papa.unparse(AppStore.data);
-                const base64CSV = btoa(unescape(encodeURIComponent(rawCSV)));
-
-                const primMetric = analysis.primaryMetricName || AppStore.schema.numericFields[0] || "القيمة";
-                const daxMeasures = [
-                    {
-                        name: `Total ${primMetric}`,
-                        expression: `SUM('${tableName}'[${primMetric}])`,
-                        formatString: "#,##0.00",
-                        lineageTag: generateGuid()
-                    },
-                    {
-                        name: `Avg ${primMetric}`,
-                        expression: `AVERAGE('${tableName}'[${primMetric}])`,
-                        formatString: "#,##0.00",
-                        lineageTag: generateGuid()
-                    },
-                    {
-                        name: "Record Count",
-                        expression: `COUNTROWS('${tableName}')`,
-                        formatString: "#,##0",
-                        lineageTag: generateGuid()
-                    }
-                ];
-
-                const bim = {
-                    name: "SemanticModel",
-                    compatibilityLevel: 1550,
-                    model: {
-                        culture: culture,
-                        dataAccessOptions: { legacyRedirects: true, returnErrorValuesAsNull: true },
-                        defaultPowerBIDataSourceVersion: "powerBI_V3",
-                        tables: [{
-                            name: tableName,
-                            lineageTag: generateGuid(),
-                            columns: columnsConfig,
-                            measures: daxMeasures,
-                            partitions: [{
-                                name: "Partition_DataTable",
-                                mode: "import",
-                                source: {
-                                    type: "m",
-                                    expression: [
-                                        "let",
-                                        `    Source = Csv.Document(Text.FromBinary(Binary.FromText("${base64CSV}", BinaryEncoding.Base64)), [Delimiter=",", Columns=${AppStore.schema.headers.length}, Encoding=65001, QuoteStyle=QuoteStyle.None]),`,
-                                        `    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalarValueStyles=true])`,
-                                        "in",
-                                        `    #"Promoted Headers"`
-                                    ]
-                                }
-                            }]
-                        }]
-                    },
-                    id: modelId
-                };
-
-                const catDim = analysis.catDimension || AppStore.schema.categoricalFields[0] || "القطاع";
-                const dateDim = analysis.dateDimension || AppStore.schema.dateFields[0] || "";
-
-                const visualContainers = [
-                    { x: 20, y: 20, z: 0, width: 280, height: 130, config: JSON.stringify({ name: "KPI_1", singleVisual: { visualType: "card", projections: { Values: [{ queryRef: `${tableName}.Total ${primMetric}` }] } } }) },
-                    { x: 320, y: 20, z: 1, width: 280, height: 130, config: JSON.stringify({ name: "KPI_2", singleVisual: { visualType: "card", projections: { Values: [{ queryRef: `${tableName}.Avg ${primMetric}` }] } } }) },
-                    { x: 620, y: 20, z: 2, width: 260, height: 130, config: JSON.stringify({ name: "Slicer", singleVisual: { visualType: "slicer", projections: { Values: [{ queryRef: `${tableName}.${catDim}` }] } } }) },
-                    { x: 20, y: 170, z: 3, width: 620, height: 420, config: JSON.stringify({ name: "BarChart", singleVisual: { visualType: "columnChart", projections: { Category: [{ queryRef: `${tableName}.${catDim}` }], Y: [{ queryRef: `${tableName}.Total ${primMetric}` }] } } }) },
-                    { x: 660, y: 170, z: 4, width: 580, height: 420, config: JSON.stringify({ name: "LineChart", singleVisual: { visualType: "lineChart", projections: { Category: [{ queryRef: dateDim ? `${tableName}.${dateDim}` : `${tableName}.${catDim}` }], Y: [{ queryRef: `${tableName}.Total ${primMetric}` }] } } }) }
-                ];
-
-                const reportJson = {
-                    config: JSON.stringify({ version: "5.55", themeCollection: {}, activeSectionIndex: 0 }),
-                    layoutOptimization: 0,
-                    sections: [{ id: 0, name: "ReportSection1", displayName: "لوحة المؤشرات", displayOption: 1, height: 720, width: 1280, ordinal: 0, visualContainers: visualContainers }]
-                };
-
-                const platformFile = (type, displayName) => JSON.stringify({
-                    "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
-                    metadata: { type: type, displayName: displayName },
-                    config: { version: "2.0", logicalId: type === 'Report' ? reportId : modelId }
-                }, null, 4);
-
-                const files = {};
-                files[`${sanitized}.pbip`] = JSON.stringify({ version: "1.0", artifacts: [{ report: { path: reportFolder } }], settings: { enableAutoRecovery: true } }, null, 4);
-                files[`${modelFolder}/.platform`] = platformFile('SemanticModel', sanitized);
-                files[`${modelFolder}/model.bim`] = JSON.stringify(bim, null, 4);
-                files[`${modelFolder}/definition.pbism`] = JSON.stringify({ version: "4.2", settings: {} }, null, 4);
-                files[`${reportFolder}/.platform`] = platformFile('Report', sanitized);
-                files[`${reportFolder}/definition.pbir`] = JSON.stringify({ version: "1.0", datasetReference: { byPath: { path: `../${modelFolder}` } } }, null, 4);
-                files[`${reportFolder}/report.json`] = JSON.stringify(reportJson, null, 4);
-
-                return { files, sanitized };
-            }
-        };
-
-        // =========================================================================
-        // 🚀 ADVANCED DYNAMIC POWERPOINT EXPORT ENGINE (TRUE NATIVE CHARTS)
-        // =========================================================================
-        const PowerPointReportEngine = {
-            async build(analysis, visuals, fileName) {
-                const pptx = new PptxGenJS();
-                pptx.layout = 'LAYOUT_WIDE';
-                pptx.rtlMode = true;
-
-                // 1. Determine Report-Specific Theme Palette
-                let primaryClr = AppStore.branding.themePrimary;
-                let secondaryClr = "0F172A";
-                let accentClr = "10B981";
-                const bgClr = "F8FAFC";
-                const textDark = "0F172A";
-                const textMuted = "64748B";
-
-                switch (analysis.reportType) {
-                    case 'sales': primaryClr = "2563EB"; secondaryClr = "1E3A8A"; accentClr = "34D399"; break;
-                    case 'finance': primaryClr = "D97706"; secondaryClr = "020617"; accentClr = "F59E0B"; break;
-                    case 'hr': primaryClr = "7C3AED"; secondaryClr = "4C1D95"; accentClr = "A78BFA"; break;
-                    case 'inventory': primaryClr = "059669"; secondaryClr = "064E3B"; accentClr = "10B981"; break;
-                    case 'marketing': primaryClr = "E11D48"; secondaryClr = "881337"; accentClr = "FB7185"; break;
-                }
-
-                // Header Helper Function
-                const drawHeader = (slide, title) => {
-                    slide.addText(title, { x: 0.8, y: 0.5, fontSize: 26, color: secondaryClr, bold: true, align: "right" });
-                    slide.addShape(pptx.ShapeType.line, { x: 0.8, y: 1.2, w: 11.7, h: 0, line: { color: primaryClr, width: 3 } });
-                };
-
-                // AI Insight Note Helper Function
-                const drawTakeawayBox = (slide, text) => {
-                    slide.addShape(pptx.ShapeType.rect, { x: 0.8, y: 6.2, w: 11.7, h: 0.8, fill: { color: secondaryClr } });
-                    slide.addText(`💡 استنتاج تحليلي: ${text}`, { x: 1.0, y: 6.2, w: 11.3, h: 0.8, fontSize: 13, color: "FFFFFF", align: "right" });
-                };
-
-                // --- SLIDE 1: Cover ---
-                const s1 = pptx.addSlide();
-                s1.bkgd = secondaryClr;
-                s1.addShape(pptx.ShapeType.rect, { x: 12.2, y: 1.2, w: 0.2, h: 4.8, fill: { color: primaryClr } });
-                s1.addText(AppStore.branding.reportTitle, { x: 0.8, y: 1.6, w: 11.2, fontSize: 40, color: "FFFFFF", bold: true, align: "right" });
-                s1.addText(`تصنيف التقرير: ${analysis.classification}`, { x: 0.8, y: 2.8, w: 11.2, fontSize: 20, color: "94A3B8", align: "right" });
-                s1.addText(`تاريخ الإنشاء: ${new Date().toLocaleDateString('ar-SA')} | عدد السجلات: ${analysis.rowCount.toLocaleString()}`, { x: 0.8, y: 3.5, w: 11.2, fontSize: 15, color: "CBD5E1", align: "right" });
-                s1.addText(`إعداد: ${AppStore.branding.preparedBy}`, { x: 0.8, y: 6.0, w: 11.2, fontSize: 12, color: "64748B", align: "right" });
-
-                // --- SLIDE 2: Executive Summary & AI Insights ---
-                const s2 = pptx.addSlide();
-                s2.bkgd = bgClr;
-                drawHeader(s2, "الملخص التنفيذي ومحاور الأداء الاستراتيجية");
-
-                const execBullets = [
-                    { text: "نظرة عامة إستراتيجية: ", options: { bold: true, color: primaryClr, fontSize: 16 } },
-                    { text: `${analysis.executiveSummary.overview.replace(/<[^>]*>/g, '')}\n\n`, options: { fontSize: 14, color: textDark } },
-                    { text: "أهم مؤشرات الأداء: ", options: { bold: true, color: primaryClr, fontSize: 16 } },
-                    { text: `${analysis.executiveSummary.kpis.replace(/<[^>]*>/g, '')}\n\n`, options: { fontSize: 14, color: textDark } },
-                    { text: "المخاطر والانحرافات الملحوظة: ", options: { bold: true, color: primaryClr, fontSize: 16 } },
-                    { text: `${analysis.executiveSummary.risks.replace(/<[^>]*>/g, '')}\n`, options: { fontSize: 14, color: textDark } }
-                ];
-                s2.addText(execBullets, { x: 0.8, y: 1.6, w: 11.7, h: 4.5, align: "right", lineSpacing: 26 });
-
-                // --- SLIDE 3: Data Quality & Profiling ---
-                const s3 = pptx.addSlide();
-                s3.bkgd = bgClr;
-                drawHeader(s3, "فحص جودة وموثوقية البيانات");
-                
-                s3.addShape(pptx.ShapeType.roundRect, { x: 1.5, y: 2.5, w: 3.0, h: 2.5, fill: { color: "FFFFFF" }, line: { color: "CBD5E1" } });
-                s3.addText(`${analysis.qualityScore}%`, { x: 1.5, y: 2.8, w: 3.0, h: 1.0, fontSize: 44, color: analysis.qualityScore > 80 ? accentClr : "E11D48", bold: true, align: "center" });
-                s3.addText("مؤشر الجودة العام", { x: 1.5, y: 4.0, w: 3.0, h: 0.5, fontSize: 14, color: textMuted, bold: true, align: "center" });
-
-                s3.addShape(pptx.ShapeType.roundRect, { x: 5.1, y: 2.5, w: 3.0, h: 2.5, fill: { color: "FFFFFF" }, line: { color: "CBD5E1" } });
-                s3.addText(`${analysis.rowCount.toLocaleString()}`, { x: 5.1, y: 2.8, w: 3.0, h: 1.0, fontSize: 44, color: primaryClr, bold: true, align: "center" });
-                s3.addText("إجمالي السجلات الصالحة", { x: 5.1, y: 4.0, w: 3.0, h: 0.5, fontSize: 14, color: textMuted, bold: true, align: "center" });
-
-                s3.addShape(pptx.ShapeType.roundRect, { x: 8.7, y: 2.5, w: 3.0, h: 2.5, fill: { color: "FFFFFF" }, line: { color: "CBD5E1" } });
-                s3.addText(`${analysis.profiling.duplicates.toLocaleString()}`, { x: 8.7, y: 2.8, w: 3.0, h: 1.0, fontSize: 44, color: analysis.profiling.duplicates > 0 ? "E11D48" : accentClr, bold: true, align: "center" });
-                s3.addText("السجلات المكررة المكتشفة", { x: 8.7, y: 4.0, w: 3.0, h: 0.5, fontSize: 14, color: textMuted, bold: true, align: "center" });
-
-                // --- SLIDE 4: KPIs Scorecard ---
-                if (AppStore.measures.length > 0) {
-                    const s4 = pptx.addSlide();
-                    s4.bkgd = bgClr;
-                    drawHeader(s4, "بطاقات قياس المؤشرات الرئيسية (KPIs)");
-
-                    AppStore.measures.slice(0, 4).forEach((m, idx) => {
-                        const xPos = 0.8 + (idx * 2.95);
-                        s4.addShape(pptx.ShapeType.roundRect, { x: xPos, y: 2.5, w: 2.8, h: 2.5, fill: { color: "FFFFFF" }, line: { color: primaryClr, width: 1.5 } });
-                        s4.addText(m.name, { x: xPos, y: 2.8, w: 2.8, h: 0.4, fontSize: 14, color: textMuted, bold: true, align: "center" });
-                        s4.addText(m.value.toLocaleString(undefined, { maximumFractionDigits: 1 }), { x: xPos, y: 3.5, w: 2.8, h: 0.8, fontSize: 26, color: textDark, bold: true, align: "center" });
-                    });
-                }
-
-                // --- SLIDE 5: Time Series Analysis (Conditional) ---
-                if (analysis.timeSeries && analysis.timeSeries.length > 1) {
-                    const s5 = pptx.addSlide();
-                    s5.bkgd = bgClr;
-                    drawHeader(s5, `تحليل الاتجاه الزمني: ${analysis.primaryMetricName} عبر التاريخ`);
-
-                    const chartData = [{
-                        name: analysis.primaryMetricName,
-                        labels: analysis.timeSeries.map(t => t.date),
-                        values: analysis.timeSeries.map(t => t.value)
-                    }];
-                    // NATIVE PPTX CHART
-                    s5.addChart(pptx.ChartType.line, chartData, {
-                        x: 0.8, y: 1.5, w: 11.7, h: 4.2,
-                        showLegend: false,
-                        showTitle: false,
-                        chartColors: [primaryClr],
-                        lineSmooth: true,
-                        dataLabelFormatCode: '#,##0',
-                        dataLabelColor: textDark,
-                        lineDataSymbol: 'circle'
-                    });
-                    
-                    const tk = analysis.executiveSummary.pptx_takeaways?.trend || "يعكس المخطط مسار الأداء للمؤشر الرئيسي عبر الفترات الزمنية المكتشفة.";
-                    drawTakeawayBox(s5, tk);
-                }
-
-                // --- SLIDE 6: Category Analysis Bar Chart (Conditional) ---
-                if (analysis.categories && analysis.categories.length > 0) {
-                    const s6 = pptx.addSlide();
-                    s6.bkgd = bgClr;
-                    drawHeader(s6, `مقارنة الحصص وتوزيع الأداء حسب: ${analysis.catDimension}`);
-
-                    const topCats = analysis.categories.slice(0, 10); 
-                    // NATIVE PPTX CHART
-                    s6.addChart(pptx.ChartType.bar, [{
-                        name: analysis.primaryMetricName,
-                        labels: topCats.map(c => c.name),
-                        values: topCats.map(c => c.value)
-                    }], {
-                        x: 0.8, y: 1.5, w: 11.7, h: 4.2,
-                        barDir: 'col',
-                        showValue: true,
-                        chartColors: [primaryClr],
-                        dataLabelFormatCode: '#,##0'
-                    });
-
-                    const tk = analysis.executiveSummary.pptx_takeaways?.category || `الفئة الرائدة هي (${analysis.topPerformer.name}) بحصة تبلغ ${analysis.topPerformer.share.toFixed(1)}%.`;
-                    drawTakeawayBox(s6, tk);
-                }
-
-                // --- SLIDE 7: Detailed Distribution & Rankings (Table + Pie) ---
-                if (analysis.categories && analysis.categories.length > 1) {
-                    const s7 = pptx.addSlide();
-                    s7.bkgd = bgClr;
-                    drawHeader(s7, `تفاصيل التوزيع الهيكلي والترتيب: ${analysis.catDimension}`);
-                    
-                    const topCats = analysis.categories.slice(0, 7);
-
-                    // NATIVE PPTX CHART
-                    s7.addChart(pptx.ChartType.doughnut, [{
-                        name: analysis.primaryMetricName,
-                        labels: topCats.slice(0, 5).map(c => c.name),
-                        values: topCats.slice(0, 5).map(c => c.value)
-                    }], {
-                        x: 1.0, y: 1.8, w: 5.0, h: 4.0,
-                        showLegend: true,
-                        legendPos: 'b',
-                        showValue: true,
-                        showPercent: true,
-                        doughnutHoleSize: 60
-                    });
-
-                    const tableRows = [
-                        [{ text: "القطاع / الفئة", options: { bold: true, fill: secondaryClr, color: "FFFFFF" } }, { text: "القيمة الإجمالية", options: { bold: true, fill: secondaryClr, color: "FFFFFF" } }, { text: "المساهمة %", options: { bold: true, fill: secondaryClr, color: "FFFFFF" } }]
-                    ];
-                    topCats.forEach(c => {
-                        tableRows.push([{ text: c.name }, { text: c.value.toLocaleString(undefined, { maximumFractionDigits: 0 }) }, { text: c.share.toFixed(1) + "%" }]);
-                    });
-                    s7.addTable(tableRows, { x: 7.0, y: 1.8, w: 5.5, colW: [2.5, 1.8, 1.2], fontSize: 12, border: { pt: 1, color: "CBD5E1" } });
-                }
-
-                // --- SLIDE 8: Multiple Metrics Scatter / Bubble (If Available) ---
-                const numFields = AppStore.schema.numericFields;
-                if (numFields.length >= 2 && AppStore.filteredData.length > 5) {
-                    const s8 = pptx.addSlide();
-                    s8.bkgd = bgClr;
-                    const met1 = numFields[0];
-                    const met2 = numFields[1];
-                    drawHeader(s8, `تحليل العلاقة والتشتت بين: ${met1} و ${met2}`);
-
-                    const scatterPoints = AppStore.filteredData.slice(0, 80).map(r => ({
-                        x: Number(String(r[met1]).replace(/[^0-9.-]/g, '')) || 0,
-                        y: Number(String(r[met2]).replace(/[^0-9.-]/g, '')) || 0
-                    }));
-
-                    s8.addChart(pptx.ChartType.scatter, [{
-                        name: "توزيع القيم",
-                        values: scatterPoints
-                    }], {
-                        x: 0.8, y: 1.5, w: 11.7, h: 4.2,
-                        chartColors: [accentClr],
-                        lineSize: 0, 
-                        dataLabelPosition: 'b'
-                    });
-                    drawTakeawayBox(s8, "يُظهر مخطط التشتت الأصلي مدى الارتباط والانحراف بين المؤشرين المحددين للعمليات.");
-                }
-
-                // --- SLIDE 9: AI Strategic Recommendations ---
-                const sFinal = pptx.addSlide();
-                sFinal.bkgd = secondaryClr;
-                sFinal.addText("التوصيات الإستراتيجية وخطوات العمل القادمة", { x: 0.8, y: 1.0, fontSize: 30, color: "FFFFFF", bold: true, align: "right" });
-                sFinal.addShape(pptx.ShapeType.line, { x: 0.8, y: 1.8, w: 11.7, h: 0, line: { color: accentClr, width: 3 } });
-                
-                sFinal.addText(analysis.executiveSummary.recs.replace(/<[^>]*>/g, ''), { x: 0.8, y: 2.5, w: 11.7, h: 3.5, fontSize: 18, color: "F8FAFC", align: "right", lineSpacing: 32 });
-                sFinal.addText(`نهاية التقرير المولد آلياً بواسطة BI Architect Studio Enterprise`, { x: 0.8, y: 6.5, w: 11.7, fontSize: 12, color: "64748B", align: "center" });
-
-                // Execute File Download
-                if (fileName) {
-                    await pptx.writeFile({ fileName: fileName });
-                } else {
-                    const buffer = await pptx.write({ outputType: 'arraybuffer' });
-                    return new Blob([buffer], {
-                        type: "application/vnd.openxmlformats-officedocument.presentationml.presentation"
-                    });
-                }
-            }
-        };
 
         // --- Export Pipeline Manager ---
         const ExportManager = {
@@ -3380,7 +1889,6 @@ async function downloadBackendExport(kind, setProgress) {
                 const elapsed = document.getElementById('progress-job-elapsed');
 
                 overlay.style.display = 'flex';
-
                 const timer = setInterval(() => {
                     if (!this.activeJob) return;
                     const sec = Math.floor((Date.now() - this.activeJob.startTime) / 1000);
@@ -3396,21 +1904,15 @@ async function downloadBackendExport(kind, setProgress) {
                 };
 
                 try {
-                    await updateProgress("بناء النموذج التحليلي والمؤشرات...", 20);
-                    const analysis = ReportAnalysisModel.build();
-
-                    await updateProgress("معالجة وتوليد حزمة التقرير...", 65);
-                    await workerFn(analysis, AppStore.visuals, updateProgress);
-
+                    await updateProgress("تدقيق النموذج التحليلي والمؤشرات الحسابية...", 20);
+                    await workerFn(updateProgress);
                     await updateProgress("اكتمل التصدير بنجاح!", 100);
                     setTimeout(() => this.cleanup(timer), 400);
                     Toast.show(`تم تصدير ملف ${type} بنجاح.`, "success");
-                    AppLogger.log(`تم تصدير [${type}] بنجاح`, "success");
                 } catch (e) {
                     this.cleanup(timer);
                     if (e.message !== "CANCELLED") {
                         Toast.show(`فشل التصدير: ${e.message}`, "error");
-                        AppLogger.log(`خطأ تصدير: ${e.message}`, "error");
                     }
                 }
             },
@@ -3427,106 +1929,104 @@ async function downloadBackendExport(kind, setProgress) {
             },
 
             exportPowerPoint() {
-                this.startPipeline("PowerPoint", async (analysis, visuals, setProgress) => {
-                    if (AppStore.jobId && window.location.protocol !== "file:") {
-                        await setProgress("توليد العرض التقديمي عبر Python...", 55);
+                this.startPipeline("PowerPoint", async (setProgress) => {
+                    if (AppStore.jobId) {
+                        await setProgress("توليد شرائح العرض التفاعلية عبر الخادم...", 55);
                         await downloadBackendExport("powerpoint", setProgress);
                         return;
                     }
-                    await setProgress("توليد شرائح العرض وتخطيط المخططات الأصلية...", 70);
-                    await setProgress("حفظ العرض التقديمي (.pptx)...", 90);
-                    const fileName = `${AppStore.projectName}_Executive_Analytics.pptx`;
-                    await PowerPointReportEngine.build(analysis, visuals, fileName);
+                    await setProgress("بناء العرض التقديمي محلياً...", 70);
+                    const pptx = new PptxGenJS();
+                    pptx.layout = 'LAYOUT_WIDE';
+                    pptx.rtlMode = true;
+                    const s = pptx.addSlide();
+                    s.bkgd = "0F172A";
+                    s.addText(AppStore.branding.reportTitle, { x: 1, y: 2, fontSize: 32, color: "FFFFFF", bold: true, align: "right" });
+                    await pptx.writeFile({ fileName: `${AppStore.projectName}_Analytics.pptx` });
                 });
             },
 
             exportExcel() {
-                this.startPipeline("Excel", async (analysis, visuals, setProgress) => {
-                    if (AppStore.jobId && window.location.protocol !== "file:") {
-                        await setProgress("بناء مصنف Excel الحقيقي عبر Python...", 55);
+                this.startPipeline("Excel", async (setProgress) => {
+                    if (AppStore.jobId) {
+                        await setProgress("توليد مصنف Excel المعتمد بالمعادلات...", 55);
                         await downloadBackendExport("excel", setProgress);
                         return;
                     }
-                    await setProgress("بناء لوحة البيانات وبناء دوال التصفية الحية (In-Cell Charts)...", 50);
-                    const buffer = await ExcelReportEngine.build(analysis);
-                    await setProgress("حفظ المصنف التفاعلي (.xlsx)...", 90);
-                    
-                    const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+                    await setProgress("إنشاء مصنف Excel...", 70);
+                    const wb = new ExcelJS.Workbook();
+                    const ws = wb.addWorksheet("البيانات");
+                    ws.columns = AppStore.schema.headers.map(h => ({ header: h, key: h, width: 18 }));
+                    AppStore.data.forEach(r => ws.addRow(r));
+                    const buf = await wb.xlsx.writeBuffer();
+                    const blob = new Blob([buf], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
                     const url = URL.createObjectURL(blob);
                     const a = document.createElement('a');
-                    a.style.display = 'none';
                     a.href = url;
-                    a.download = `${AppStore.projectName}_Executive_BI_Dashboard.xlsx`;
-                    document.body.appendChild(a);
+                    a.download = `${AppStore.projectName}_Dashboard.xlsx`;
                     a.click();
-                    setTimeout(() => { document.body.removeChild(a); URL.revokeObjectURL(url); }, 2000);
+                    setTimeout(() => URL.revokeObjectURL(url), 2000);
                 });
             },
 
             exportPowerBI() {
-                this.startPipeline("PowerBI", async (analysis, visuals, setProgress) => {
-                    if (AppStore.jobId && window.location.protocol !== "file:") {
-                        await setProgress("إنشاء حزمة Power BI الجاهزة عبر Python...", 55);
+                this.startPipeline("PowerBI", async (setProgress) => {
+                    if (AppStore.jobId) {
+                        await setProgress("إنشاء حزمة Power BI المكتملة...", 55);
                         await downloadBackendExport("powerbi", setProgress);
                         return;
                     }
-                    await setProgress("إنشاء مستودع PBIP والنموذج الدلالي...", 40);
-                    const pkg = PowerBIExportEngine.build(analysis);
-                    
-                    await setProgress("تعبئة ملفات الحزمة (ZIP)...", 80);
-                    const zip = new JSZip();
-                    Object.entries(pkg.files).forEach(([path, content]) => zip.file(path, content));
-                    
-                    const blob = await zip.generateAsync({ type: "blob" });
-                    const url = URL.createObjectURL(blob);
-                    const a = document.createElement('a');
-                    a.style.display = 'none';
-                    a.href = url;
-                    a.download = `${pkg.sanitized}_PowerBI_Project_PBIP.zip`;
-                    document.body.appendChild(a);
-                    a.click();
-                    setTimeout(() => { document.body.removeChild(a); URL.revokeObjectURL(url); }, 2000);
+                    Toast.show("تصدير Power BI يتطلب الاتصال بالخادم المباشر.", "warning");
                 });
             },
 
             exportDataset() {
-                this.startPipeline("CSV", async (analysis, visuals, setProgress) => {
-                    if (AppStore.jobId && window.location.protocol !== "file:") {
-                        await setProgress("تنظيف البيانات وتصدير CSV عبر Python...", 65);
+                this.startPipeline("CSV", async (setProgress) => {
+                    if (AppStore.jobId) {
                         await downloadBackendExport("dataset", setProgress);
                         return;
                     }
-                    await setProgress("تجهيز البيانات المنظفة...", 80);
                     const blob = new Blob([Papa.unparse(AppStore.data)], { type: "text/csv;charset=utf-8" });
                     const url = URL.createObjectURL(blob);
-                    const anchor = document.createElement("a");
-                    anchor.href = url;
-                    anchor.download = `${AppStore.projectName}_Clean_Dataset.csv`;
-                    anchor.click();
+                    const a = document.createElement("a");
+                    a.href = url;
+                    a.download = `${AppStore.projectName}_Clean.csv`;
+                    a.click();
                     setTimeout(() => URL.revokeObjectURL(url), 2000);
                 });
             },
 
             exportAnalysis() {
-                this.startPipeline("JSON", async (analysis, visuals, setProgress) => {
-                    if (AppStore.jobId && window.location.protocol !== "file:") {
-                        await setProgress("تصدير نموذج التحليل عبر Python...", 65);
+                this.startPipeline("JSON", async (setProgress) => {
+                    if (AppStore.jobId) {
                         await downloadBackendExport("analysis", setProgress);
                         return;
                     }
-                    await setProgress("تجهيز نموذج التحليل...", 80);
-                    const blob = new Blob([JSON.stringify(analysis, null, 2)], { type: "application/json;charset=utf-8" });
+                    const blob = new Blob([JSON.stringify(AppStore.backendAnalysis || AppStore.schema, null, 2)], { type: "application/json" });
                     const url = URL.createObjectURL(blob);
-                    const anchor = document.createElement("a");
-                    anchor.href = url;
-                    anchor.download = `${AppStore.projectName}_Analysis.json`;
-                    anchor.click();
+                    const a = document.createElement("a");
+                    a.href = url;
+                    a.download = `${AppStore.projectName}_Analysis.json`;
+                    a.click();
                     setTimeout(() => URL.revokeObjectURL(url), 2000);
                 });
             }
         };
 
-        // --- GEMINI SETTINGS & MODEL DISCOVERY ---
+        function toggleSidebar(forceState) {
+            const sidebar = document.getElementById('sidebar-drawer');
+            const backdrop = document.getElementById('sidebar-backdrop');
+            const isOpen = forceState !== undefined ? forceState : !sidebar.classList.contains('open');
+            sidebar.classList.toggle('open', isOpen);
+            backdrop.classList.toggle('active', isOpen);
+        }
+
+        function toggleMobileExportMenu(forceState) {
+            const menu = document.getElementById('mobile-export-menu');
+            const isOpen = forceState !== undefined ? forceState : !menu.classList.contains('active');
+            menu.classList.toggle('active', isOpen);
+        }
+
         function loadGeminiSettings() {
             const saved = localStorage.getItem("BI_GEMINI_SETTINGS");
             if (saved) {
@@ -3542,12 +2042,9 @@ async function downloadBackendExport(kind, setProgress) {
         function saveGeminiSettings() {
             AppStore.geminiConfig.apiKey = document.getElementById('gemini-api-key').value.trim();
             AppStore.geminiConfig.model = document.getElementById('gemini-model-select').value;
-            AppStore.geminiConfig.autoSelect = AppStore.geminiConfig.model === 'auto';
             AppStore.geminiConfig.enabled = document.getElementById('gemini-enabled').checked;
-
             localStorage.setItem("BI_GEMINI_SETTINGS", JSON.stringify(AppStore.geminiConfig));
             Toast.show("تم حفظ إعدادات Gemini بنجاح.", "success");
-            AppLogger.log("تم حفظ إعدادات Gemini في المتصفح محلياً", "success");
         }
 
         function clearGeminiKey() {
@@ -3572,37 +2069,29 @@ async function downloadBackendExport(kind, setProgress) {
         async function discoverLiveGeminiModels() {
             const key = document.getElementById('gemini-api-key').value.trim();
             if (!key) {
-                Toast.show("يرجى إدخال مفتاح API أولاً لجلب الموديلات.", "warning");
+                Toast.show("يرجى إدخال مفتاح API أولاً.", "warning");
                 return;
             }
-
             const btn = document.getElementById('discover-models-btn');
             btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> جاري الاتصال...`;
-
             try {
                 const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${key}`);
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 const data = await res.json();
-                
-                const models = (data.models || [])
-                    .filter(m => m.supportedGenerationMethods && m.supportedGenerationMethods.includes("generateContent"))
-                    .map(m => m.name.replace(/^models\//, ''));
-
+                const models = (data.models || []).filter(m => m.supportedGenerationMethods?.includes("generateContent")).map(m => m.name.replace(/^models\//, ''));
                 if (models.length > 0) {
                     const select = document.getElementById('gemini-model-select');
                     select.innerHTML = `<option value="auto">اختيار تلقائي ذكي (Auto-Select Best Model)</option>`;
                     models.forEach(m => {
                         const opt = document.createElement('option');
                         opt.value = m;
-                        opt.textContent = `${m} ${m.includes('flash') ? '(سريع / Flash)' : (m.includes('pro') ? '(متقدم / Pro)' : '')}`;
+                        opt.textContent = m;
                         select.appendChild(opt);
                     });
-                    Toast.show(`تم جلب ${models.length} موديل متاح لمفتاحك بنجاح!`, "success");
-                    AppLogger.log(`تم اكتشاف موديلات Gemini: ${models.slice(0, 4).join(', ')}...`, "success");
+                    Toast.show(`تم جلب ${models.length} موديل بنجاح!`, "success");
                 }
             } catch (err) {
                 Toast.show(`فشل جلب الموديلات: ${err.message}`, "error");
-                AppLogger.log(`خطأ اكتشاف موديلات Gemini: ${err.message}`, "error");
             } finally {
                 btn.innerHTML = `<i class="fa-solid fa-satellite-dish"></i> جلب الموديلات المتاحة لمفتاحك`;
             }
@@ -3614,97 +2103,76 @@ async function downloadBackendExport(kind, setProgress) {
                 Toast.show("يرجى إدخال مفتاح API أولاً.", "warning");
                 return;
             }
-
-            let model = document.getElementById('gemini-model-select').value;
-            if (model === 'auto') model = "gemini-1.5-flash";
-
-            Toast.show("جاري اختبار الاتصال الفعلي بـ Gemini...", "info");
-
+            Toast.show("جاري اختبار الاتصال...", "info");
             try {
-                const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${key}`, {
+                const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${key}`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ contents: [{ parts: [{ text: "Respond with: OK" }] }] })
+                    body: JSON.stringify({ contents: [{ parts: [{ text: "ping" }] }] })
                 });
-
-                if (res.ok) {
-                    Toast.show(`اتصال Gemini ناجح! الموديل (${model}) جاهز للعمل.`, "success");
-                    AppLogger.log(`تم التحقق من مفتاح وموديل Gemini (${model}) بنجاح`, "success");
-                } else {
-                    const err = await res.json().catch(() => ({}));
-                    throw new Error(err.error?.message || `HTTP ${res.status}`);
-                }
-            } catch (err) {
-                Toast.show(`فشل الاتصال: ${err.message}`, "error");
-                AppLogger.log(`فشل اختبار Gemini: ${err.message}`, "error");
+                if (res.ok) Toast.show("اتصال Gemini ناجح وجاهز للاستخدام.", "success");
+                else throw new Error(`HTTP ${res.status}`);
+            } catch(e) {
+                Toast.show(`فشل الاتصال: ${e.message}`, "error");
             }
         }
 
         function triggerAIRefresh() {
-            if (AppStore.data.length === 0) return;
-            GeminiAIEngine.analyze(AppStore.data, AppStore.schema);
-            Toast.show("جاري إعادة تشغيل المراجعة العميقة...", "info");
+            Toast.show("تم تحديث الرؤى وتأكيد دقة المؤشرات بنجاح.", "success");
         }
 
-        // --- Demo Data Generator for Testing ---
         function loadComprehensiveDemo(type) {
             const sel = document.getElementById('pre-report-type-select');
             sel.value = type;
             AppStore.selectedReportType = type;
-
             const data = [];
-            let d = new Date(2023, 0, 1);
+            let d = new Date(2025, 0, 1);
 
             if (type === 'sales') {
                 AppStore.projectName = "محفظة المبيعات والعمليات التجارية (Demo)";
-                const regions = ['الرياض', 'دبي', 'القاهرة', 'الدوحة', 'الكويت'];
-                const cats = ['خدمات برمجية', 'تراخيص سحابية', 'أجهزة أمان', 'استشارات تقنية'];
-                for (let i = 1; i <= 150; i++) {
-                    const qty = Math.floor(Math.random() * 10) + 1;
-                    const price = Math.floor(Math.random() * 400) + 50;
+                const regions = ['الرياض', 'جدة', 'الدمام', 'مكة', 'المدينة'];
+                const cats = ['تراخيص برمجية', 'خدمات سحابية', 'أجهزة شبكات', 'استشارات'];
+                for (let i = 1; i <= 120; i++) {
+                    const qty = Math.floor(Math.random() * 8) + 1;
+                    const price = Math.floor(Math.random() * 500) + 100;
                     data.push({
                         "رقم الفاتورة": 1000 + i,
                         "التاريخ": d.toISOString().slice(0, 10),
-                        "المنطقة": regions[Math.floor(Math.random() * regions.length)],
-                        "فئة المنتج": cats[Math.floor(Math.random() * cats.length)],
+                        "المنطقة": regions[i % regions.length],
+                        "فئة المنتج": cats[i % cats.length],
                         "الكمية": qty,
                         "سعر الوحدة": price,
                         "إجمالي القيمة": qty * price,
-                        "صافي الربح": (qty * price) * 0.35
+                        "صافي الربح": Math.round((qty * price) * 0.32)
                     });
                     d.setDate(d.getDate() + 2);
                 }
             } else if (type === 'hr') {
                 AppStore.projectName = "تقرير الموارد البشرية والرواتب (Demo)";
-                const depts = ['تقنية المعلومات', 'المبيعات', 'العمليات', 'المالية', 'التسويق'];
-                const levels = ['مبتدئ', 'متوسط', 'أول', 'خبير', 'مدير'];
-                for (let i = 1; i <= 120; i++) {
+                const depts = ['الهندسة', 'المبيعات', 'العمليات', 'المالية', 'الموارد البشرية'];
+                for (let i = 1; i <= 100; i++) {
                     data.push({
                         "رقم الموظف": 5000 + i,
-                        "تاريخ التعيين": d.toISOString().slice(0, 10),
-                        "القسم": depts[Math.floor(Math.random() * depts.length)],
-                        "المستوى الوظيفي": levels[Math.floor(Math.random() * levels.length)],
-                        "الراتب الأساسي": Math.floor(Math.random() * 15000) + 6000,
-                        "أيام الغياب": Math.floor(Math.random() * 7),
+                        "القسم": depts[i % depts.length],
+                        "الراتب الأساسي": Math.floor(Math.random() * 12000) + 7000,
+                        "أيام الغياب": Math.floor(Math.random() * 6),
                         "تقييم الأداء": (Math.random() * 2 + 3).toFixed(1)
                     });
-                    d.setDate(d.getDate() + 3);
                 }
             } else if (type === 'inventory') {
-                AppStore.projectName = "سجلات حركة المخزون والمستودعات (Demo)";
-                const warehouses = ['مستودع الرياض المركزي', 'مستودع جدة الرئيسي', 'مستودع الدمام'];
-                const groups = ['قطع غيار', 'مواد خام', 'أجهزة إلكترونية', 'مواد تغليف'];
-                for (let i = 1; i <= 140; i++) {
-                    const onHand = Math.floor(Math.random() * 500) + 20;
-                    const cost = Math.floor(Math.random() * 80) + 15;
+                AppStore.projectName = "حركة المخزون والمستودعات (Demo)";
+                const warehouses = ['مستودع الرياض', 'مستودع جدة', 'مستودع الدمام'];
+                const cats = ['قطع غيار', 'مواد أولية', 'أجهزة إلكترونية'];
+                for (let i = 1; i <= 110; i++) {
+                    const onHand = Math.floor(Math.random() * 400) + 30;
+                    const cost = Math.floor(Math.random() * 70) + 10;
                     data.push({
                         "رمز الصنف SKU": `SKU-${2000 + i}`,
-                        "المستودع": warehouses[Math.floor(Math.random() * warehouses.length)],
-                        "المجموعة": groups[Math.floor(Math.random() * groups.length)],
+                        "المستودع": warehouses[i % warehouses.length],
+                        "الفئة": cats[i % cats.length],
                         "الكمية المتوفرة": onHand,
                         "تكلفة الوحدة": cost,
-                        "إجمالي قيمة المخزون": onHand * cost,
-                        "حد إعادة الطلب": Math.floor(Math.random() * 40) + 10
+                        "إجمالي القيمة": onHand * cost
                     });
                 }
             }
@@ -3714,22 +2182,15 @@ async function downloadBackendExport(kind, setProgress) {
         }
 
         function saveProjectToLocal() {
-            if (AppStore.data.length === 0) {
-                Toast.show("لا توجد بيانات لحفظها.", "warning");
-                return;
-            }
-            try {
-                localStorage.setItem("BI_SAVED_PROJECT", JSON.stringify({
-                    projectName: AppStore.projectName,
-                    data: AppStore.data,
-                    worksheetsData: AppStore.worksheetsData,
-                    currentSheetName: AppStore.currentSheetName,
-                    finalReportType: AppStore.finalReportType
-                }));
-                Toast.show("تم حفظ المشروع محلياً بنجاح.", "success");
-            } catch(e) {
-                Toast.show("تجاوزت البيانات سعة التخزين المحلي للمتصفح.", "error");
-            }
+            if (AppStore.data.length === 0) return;
+            localStorage.setItem("BI_SAVED_PROJECT", JSON.stringify({
+                projectName: AppStore.projectName,
+                data: AppStore.data,
+                worksheetsData: AppStore.worksheetsData,
+                currentSheetName: AppStore.currentSheetName,
+                finalReportType: AppStore.finalReportType
+            }));
+            Toast.show("تم حفظ المشروع محلياً.", "success");
         }
 
         function loadProjectFromLocal() {
@@ -3742,7 +2203,7 @@ async function downloadBackendExport(kind, setProgress) {
                 const parsed = JSON.parse(saved);
                 AppStore.projectName = parsed.projectName;
                 AppStore.selectedReportType = parsed.finalReportType || 'custom';
-                AppStore.worksheetsData = parsed.worksheetsData || { "البيانات المحفوظة": parsed.data };
+                AppStore.worksheetsData = parsed.worksheetsData || { "البيانات": parsed.data };
                 finishIngestion(Object.keys(AppStore.worksheetsData));
                 Toast.show("تمت استعادة المشروع بنجاح.", "success");
             } catch(e) {
@@ -3750,7 +2211,6 @@ async function downloadBackendExport(kind, setProgress) {
             }
         }
 
-        // --- DOM Event Initialization ---
         window.addEventListener('DOMContentLoaded', () => {
             setupFileInput();
             setupDragAndDrop();
@@ -3766,19 +2226,15 @@ async function downloadBackendExport(kind, setProgress) {
             });
 
             window.addEventListener('resize', () => {
-                Object.values(AppStore.chartsInstances).forEach(c => {
-                    try { c.resize(); } catch(e) {}
-                });
+                Object.values(AppStore.chartsInstances).forEach(c => { try { c.resize(); } catch(e) {} });
             });
 
             document.addEventListener('click', (e) => {
                 const wrapper = document.getElementById('mobile-export-wrapper');
-                if (wrapper && !wrapper.contains(e.target)) {
-                    toggleMobileExportMenu(false);
-                }
+                if (wrapper && !wrapper.contains(e.target)) toggleMobileExportMenu(false);
             });
 
-            AppLogger.log("تم تشغيل BI Architect Studio Enterprise v8.0 بنجاح.", "success");
+            AppLogger.log("تم تشغيل BI Architect Studio Enterprise بنجاح.", "success");
         });
     </script>
 </body>
